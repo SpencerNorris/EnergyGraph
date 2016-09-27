@@ -1,0 +1,15 @@
+@prefix prov:          <http://www.w3.org/ns/prov#> .
+@prefix dcat:          <http://www.w3.org/ns/dcat#> .
+@prefix dcterms:       <http://purl.org/dc/terms/> .
+@prefix void:          <http://rdfs.org/ns/void#> .
+@prefix setl:          <http://purl.org/twc/vocab/setl/> .
+@prefix csvw:          <http://www.w3.org/ns/csvw#> .
+@prefix pv:            <http://purl.org/net/provenance/ns#> .
+@prefix :              <http://example.com/setl/> .
+
+:table a csvw:Table, setl:Table;
+  csvw:delimiter ",";
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <social.csv>;
+  ].
