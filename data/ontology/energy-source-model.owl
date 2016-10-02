@@ -16,18 +16,58 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/energysources/">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="NaturalGasEnergySource"/>
+        <Class IRI="Coal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CommercialPowerConsumption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConsumptionSector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ElectricPowerConsumption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EnergyStorageMedium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GasEnergySource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GeothermalEnergySource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IndependentElectricGeneratorConsumption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IndependentProducerElectricGeneratorConsumption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IndustrialPowerConsumption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NaturalGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OtherGasEnergySource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Petroleum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TotalElectricPowerIndustryConsumption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="UtilityElectricGeneratorConsumption"/>
     </Declaration>
     <Declaration>
         <Class IRI="WindEnergySource"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CoalEnergySource"/>
     </Declaration>
     <Declaration>
         <Class IRI="#EnergySource"/>
@@ -44,17 +84,64 @@
     <Declaration>
         <Class IRI="#SolarEnergySource"/>
     </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasAbbreviation"/>
+    </Declaration>
     <SubClassOf>
-        <Class IRI="NaturalGasEnergySource"/>
+        <Class IRI="Coal"/>
         <Class IRI="#FossilFuelEnergySource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CommercialPowerConsumption"/>
+        <Class IRI="ConsumptionSector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ElectricPowerConsumption"/>
+        <Class IRI="ConsumptionSector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GasEnergySource"/>
+        <Class IRI="#FossilFuelEnergySource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GeothermalEnergySource"/>
+        <Class IRI="#RenewableEnergySource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IndependentElectricGeneratorConsumption"/>
+        <Class IRI="ConsumptionSector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IndependentProducerElectricGeneratorConsumption"/>
+        <Class IRI="IndependentElectricGeneratorConsumption"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IndustrialPowerConsumption"/>
+        <Class IRI="ConsumptionSector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NaturalGas"/>
+        <Class IRI="GasEnergySource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OtherGasEnergySource"/>
+        <Class IRI="GasEnergySource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Petroleum"/>
+        <Class IRI="#FossilFuelEnergySource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TotalElectricPowerIndustryConsumption"/>
+        <Class IRI="ConsumptionSector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="UtilityElectricGeneratorConsumption"/>
+        <Class IRI="ConsumptionSector"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="WindEnergySource"/>
         <Class IRI="#RenewableEnergySource"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CoalEnergySource"/>
-        <Class IRI="#FossilFuelEnergySource"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FossilFuelEnergySource"/>
@@ -76,20 +163,89 @@
         <Class IRI="#NonRenewableEnergySource"/>
         <Class IRI="#RenewableEnergySource"/>
     </DisjointClasses>
+    <DataPropertyRange>
+        <DataProperty IRI="hasAbbreviation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>NaturalGasEnergySource</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">natural gas energy source</Literal>
+        <IRI>CommercialPowerConsumption</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">commercial power consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ConsumptionSector</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A subdivision of net national energy consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ConsumptionSector</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">consumption sector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ElectricPowerConsumption</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">electric power consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EnergyStorageMedium</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">energy storage medium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GasEnergySource</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">gas energy source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GeothermalEnergySource</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">geothermal energy source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IndependentElectricGeneratorConsumption</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">independent electric generator consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IndependentProducerElectricGeneratorConsumption</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">independent producer electric generator consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IndustrialPowerConsumption</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">industrial power consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>NaturalGas</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">natural gas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OtherGasEnergySource</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">other gas energy source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Petroleum</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Petroleum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TotalElectricPowerIndustryConsumption</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">total electric power industry consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>UtilityElectricGeneratorConsumption</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">utility electric generator consumption</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>WindEnergySource</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">wind energy source</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#CoalEnergySource</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">coal energy source</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
