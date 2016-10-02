@@ -1,4 +1,5 @@
-
+Setlr files use following prefix to denote references to classes defined in energy-source-model.owl:
+@prefix eg:  <http://semanticweb.org/energysources> .
 
 
 RECORD OF PROCESSING STEPS
@@ -7,7 +8,9 @@ RECORD OF PROCESSING STEPS
 
 2) Blowing away comments, colors, etc. in tables to prevent any wonkiness when exporting to csv.
 
-3) Removing commas from consumption column to make sure CSV is well-formed.
+3) Changing "TYPE OF PRODUCER" to "SECTOR_NAME" for consistency between sheets, make Setlr files cleaner when defining pipeline.
+
+3) Removing commas from CONSUMPTION, SECTOR_NAME columns to make sure CSV is well-formed.
 
 
 ONTOLOGY
