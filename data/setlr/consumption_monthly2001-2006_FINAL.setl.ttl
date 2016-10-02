@@ -5,6 +5,7 @@
 @prefix setl:          <http://purl.org/twc/vocab/setl/> .
 @prefix csvw:          <http://www.w3.org/ns/csvw#> .
 @prefix pv:            <http://purl.org/net/provenance/ns#> .
+@prefix eg:	       <http://semanticweb.org/energysources/> .
 @prefix :              <http://example.com/setl/> .
 
 :table a csvw:Table, setl:Table;
