@@ -6,11 +6,13 @@
 @prefix csvw:          <http://www.w3.org/ns/csvw#> .
 @prefix pv:            <http://purl.org/net/provenance/ns#> .
 @prefix eg:	       <http://semanticweb.org/energysources/> .
+@prefix oboe: 	       <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#> .
+@prefix xsd: 	       <http://www.w3.org/2001/XMLSchema#> .
 @prefix :              <http://example.com/setl/> .
 
 :table a csvw:Table, setl:Table;
   csvw:delimiter ",";
   prov:wasGeneratedBy [
     a setl:Extract;
-    prov:used <social.csv>;
+    prov:used <consumption_monthly2001-2006_FINAL.csv>;
   ].
