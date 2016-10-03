@@ -157,6 +157,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Alabama</rdfs:label>
         <us-state-model2:stateAbbreviation>AL</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USEastSouthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -167,6 +168,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Alaska</rdfs:label>
         <us-state-model2:stateAbbreviation>AK</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USPacific"/>
     </owl:NamedIndividual>
     
 
@@ -177,6 +179,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Arizona</rdfs:label>
         <us-state-model2:stateAbbreviation>AZ</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USMountain"/>
     </owl:NamedIndividual>
     
 
@@ -187,6 +190,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Arkansas</rdfs:label>
         <us-state-model2:stateAbbreviation>AR</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USWestSouthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -197,6 +201,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">California</rdfs:label>
         <us-state-model2:stateAbbreviation>CA</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USPacific"/>
     </owl:NamedIndividual>
     
 
@@ -218,6 +223,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Delaware</rdfs:label>
         <us-state-model2:stateAbbreviation>DE</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USSouthAtlantic"/>
     </owl:NamedIndividual>
     
 
@@ -228,6 +234,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Florida</rdfs:label>
         <us-state-model2:stateAbbreviation>FL</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USSouthAtlantic"/>
     </owl:NamedIndividual>
     
 
@@ -238,6 +245,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Georgia</rdfs:label>
         <us-state-model2:stateAbbreviation>GA</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USSouthAtlantic"/>
     </owl:NamedIndividual>
     
 
@@ -248,6 +256,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Hawaii</rdfs:label>
         <us-state-model2:stateAbbreviation>HI</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USPacific"/>
     </owl:NamedIndividual>
     
 
@@ -258,6 +267,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Idaho</rdfs:label>
         <us-state-model2:stateAbbreviation>ID</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USMountain"/>
     </owl:NamedIndividual>
     
 
@@ -268,6 +278,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Illinois</rdfs:label>
         <us-state-model2:stateAbbreviation>IL</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USEastNorthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -278,6 +289,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Indiana</rdfs:label>
         <us-state-model2:stateAbbreviation>IN</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USEastNorthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -288,6 +300,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Iowa</rdfs:label>
         <us-state-model2:stateAbbreviation>IA</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USWestNorthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -298,6 +311,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Kansas</rdfs:label>
         <us-state-model2:stateAbbreviation>KS</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USWestNorthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -308,6 +322,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Kentucky</rdfs:label>
         <us-state-model2:stateAbbreviation>KY</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USEastSouthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -318,6 +333,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Louisiana</rdfs:label>
         <us-state-model2:stateAbbreviation>LA</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USWestSouthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -339,6 +355,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Maryland</rdfs:label>
         <us-state-model2:stateAbbreviation>MD</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USSouthAtlantic"/>
     </owl:NamedIndividual>
     
 
@@ -360,6 +377,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Michigan</rdfs:label>
         <us-state-model2:stateAbbreviation>MI</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USEastNorthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -370,6 +388,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Minnesota</rdfs:label>
         <us-state-model2:stateAbbreviation>MN</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USWestNorthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -380,6 +399,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Mississippi</rdfs:label>
         <us-state-model2:stateAbbreviation>MS</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USEastSouthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -390,6 +410,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Missouri</rdfs:label>
         <us-state-model2:stateAbbreviation>MO</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USWestNorthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -400,6 +421,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Montana</rdfs:label>
         <us-state-model2:stateAbbreviation>MT</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USMountain"/>
     </owl:NamedIndividual>
     
 
@@ -410,6 +432,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Nebraska</rdfs:label>
         <us-state-model2:stateAbbreviation>NE</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USWestNorthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -420,6 +443,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Nevada</rdfs:label>
         <us-state-model2:stateAbbreviation>NV</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USMountain"/>
     </owl:NamedIndividual>
     
 
@@ -452,6 +476,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">New Mexico</rdfs:label>
         <us-state-model2:stateAbbreviation>NM</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USMountain"/>
     </owl:NamedIndividual>
     
 
@@ -473,6 +498,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">North Carolina</rdfs:label>
         <us-state-model2:stateAbbreviation>NC</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USSouthAtlantic"/>
     </owl:NamedIndividual>
     
 
@@ -483,6 +509,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">North Dakota</rdfs:label>
         <us-state-model2:stateAbbreviation>ND</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USWestNorthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -493,6 +520,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Ohio</rdfs:label>
         <us-state-model2:stateAbbreviation>OH</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USEastNorthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -503,6 +531,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Oklahoma</rdfs:label>
         <us-state-model2:stateAbbreviation>OK</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USWestSouthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -513,6 +542,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Oregon</rdfs:label>
         <us-state-model2:stateAbbreviation>OR</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USPacific"/>
     </owl:NamedIndividual>
     
 
@@ -545,6 +575,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">South Carolina</rdfs:label>
         <us-state-model2:stateAbbreviation>SC</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USSouthAtlantic"/>
     </owl:NamedIndividual>
     
 
@@ -555,6 +586,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">South Dakota</rdfs:label>
         <us-state-model2:stateAbbreviation>SD</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USWestNorthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -565,6 +597,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Tennessee</rdfs:label>
         <us-state-model2:stateAbbreviation>TN</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USEastSouthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -575,6 +608,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Texas</rdfs:label>
         <us-state-model2:stateAbbreviation>TX</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USWestSouthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -706,6 +740,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Utah</rdfs:label>
         <us-state-model2:stateAbbreviation>UT</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USMountain"/>
     </owl:NamedIndividual>
     
 
@@ -727,6 +762,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Virginia</rdfs:label>
         <us-state-model2:stateAbbreviation>VA</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USSouthAtlantic"/>
     </owl:NamedIndividual>
     
 
@@ -737,6 +773,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Washington</rdfs:label>
         <us-state-model2:stateAbbreviation>WA</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USPacific"/>
     </owl:NamedIndividual>
     
 
@@ -747,6 +784,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">West Virginia</rdfs:label>
         <us-state-model2:stateAbbreviation>WV</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USSouthAtlantic"/>
     </owl:NamedIndividual>
     
 
@@ -757,6 +795,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Wisconsin</rdfs:label>
         <us-state-model2:stateAbbreviation>WI</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USEastNorthCentral"/>
     </owl:NamedIndividual>
     
 
@@ -767,6 +806,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Wyoming</rdfs:label>
         <us-state-model2:stateAbbreviation>WY</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USMountain"/>
     </owl:NamedIndividual>
     
 
@@ -777,6 +817,7 @@
         <rdf:type rdf:resource="&us-state-model3;#State"/>
         <rdfs:label xml:lang="en">Colorado</rdfs:label>
         <us-state-model2:stateAbbreviation>CO</us-state-model2:stateAbbreviation>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USMountain"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
