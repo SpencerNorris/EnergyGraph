@@ -5,7 +5,7 @@
 @prefix setl:          <http://purl.org/twc/vocab/setl/> .
 @prefix csvw:          <http://www.w3.org/ns/csvw#> .
 @prefix pv:            <http://purl.org/net/provenance/ns#> .
-@prefix eg:	       <http://semanticweb.org/energysources/> .
+@prefix eg:	       <http://www.semanticweb.org/energysources/> .
 @prefix state:	       <http://www.semanticweb.org/us-state-model/> .
 @prefix obo: 	       <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#> .
 @prefix xsd: 	       <http://www.w3.org/2001/XMLSchema#> .
@@ -19,7 +19,7 @@
   ].
 
 
-<http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL>
+<http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL>
 	a void:Dataset;
 	prov:wasGeneratedBy [
 		a setl:Transform, setl:JSLDT ;
@@ -27,7 +27,7 @@
 		setl:hasContext '''{
 			"xsd" : "http://www.w3.org/2001/XMLSchema#",
 			"obo" : "http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#",
-			"eg"  : "http://semanticweb.org/energysources/",
+			"eg"  : "http://www.semanticweb.org/energysources/",
 			"prov": "http://www.w3.org/ns/prov#",
 			"state": "http://www.semanticweb.org/us-state-model/",
 			"hasValue" : 
@@ -36,20 +36,20 @@
 				},
 			"date" :
 				{
-				 "@id": "http://semanticweb.org/energysources/date",
+				 "@id": "http://www.semanticweb.org/energysources/date",
 				 "@type": "xsd:gYearMonth"           
 				}
 		}''' ;
 		prov:value '''[
 		{
-			"@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Observation" ,
+			"@id": "http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Observation" ,
 			"@type": "obo:Observation" ,
-			"obo:hasMeasurement": {"@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Measurement" } ,
-			"obo:ofEntity": {"@id":  "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent" },
-			"prov:wasDerivedFrom": {"@id": "http://semanticweb.org/EnergyGraph/tabular/consumption_monthly2001-2006_FINAL.csv" }
+			"obo:hasMeasurement": {"@id": "http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Measurement" } ,
+			"obo:ofEntity": {"@id":  "http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent" },
+			"prov:wasDerivedFrom": {"@id": "https://www.eia.gov/electricity/data/state/annual_generation_state.xls" }
 		},
 		{
-			"@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Measurement" ,
+			"@id": "http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Measurement" ,
 			"@type": "obo:Measurement",
 			"hasValue": [
 			{
@@ -79,12 +79,12 @@
 				"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
 				"@id": "obo:Ton" 
 			}],
-			"obo:ofCharacteristic": { "@id": "eg:ConsumptionAmount" },
+			"obo:ofCharacteristic": { "@id": "http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Characteristic" },
 			"obo:usesProtocol": { "@id": "eg:UnknownProtocol" },
-			"obo:measurementFor": { "@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Observation"}
+			"obo:measurementFor": { "@id": "http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Observation"}
 		},
 		{
-			"@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent",
+			"@id": "http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent",
 			"@type": "eg:ConsumptionEvent",
 			"date": "{{row.YEAR}}-{{row.MONTH}}",
 			"eg:ofSector": [
@@ -331,7 +331,9 @@
 			]
 		},
 		{
-		 "@id": "http://semanticweb.org/EnergyGraph/nanopublications/consumption_monthly2001-2006_FINAL-{{row.name}}-Nanopublication"
+		 "@id": "http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Characteristic",
+		 "@type": "obo:Characteristic",
+		 "obo:characteristicFor": "http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent"
 		}]''' ;
 	].
 
@@ -341,5 +343,5 @@
     prov:wasGeneratedBy [
       a setl:Load;
       prov:used 
-	<http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL> ;
+	<http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL> ;
     ].
