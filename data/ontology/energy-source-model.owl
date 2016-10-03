@@ -21,11 +21,15 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://ecoinformatics.org/oboe/oboe.1.2/oboe.owl</Import>
     <Declaration>
         <Class IRI="Coal"/>
     </Declaration>
     <Declaration>
         <Class IRI="CommercialPowerConsumption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConsumptionEvent"/>
     </Declaration>
     <Declaration>
         <Class IRI="ConsumptionSector"/>
@@ -35,6 +39,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="EnergyStorageMedium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FootCubed"/>
     </Declaration>
     <Declaration>
         <Class IRI="GasEnergySource"/>
@@ -85,6 +92,12 @@
         <Class IRI="#SolarEnergySource"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="ofSector"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="date"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="hasAbbreviation"/>
     </Declaration>
     <SubClassOf>
@@ -96,8 +109,50 @@
         <Class IRI="ConsumptionSector"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="ConsumptionEvent"/>
+        <Class IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConsumptionEvent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="ofSector"/>
+            <Class IRI="ConsumptionSector"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="ElectricPowerConsumption"/>
         <Class IRI="ConsumptionSector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FootCubed"/>
+        <Class IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#DerivedUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FootCubed"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#hasUnit"/>
+            <Class IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-standards.owl#Foot"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FootCubed"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#standardFor"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Measurement"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#ofCharacteristic"/>
+                    <Class IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-characteristics.owl#Volume"/>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FootCubed"/>
+        <DataHasValue>
+            <DataProperty IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#hasPower"/>
+            <Literal datatypeIRI="&xsd;integer">3</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GasEnergySource"/>
@@ -163,6 +218,10 @@
         <Class IRI="#NonRenewableEnergySource"/>
         <Class IRI="#RenewableEnergySource"/>
     </DisjointClasses>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="ofSector"/>
+        <Class IRI="ConsumptionSector"/>
+    </ObjectPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="hasAbbreviation"/>
         <Datatype abbreviatedIRI="xsd:string"/>
@@ -171,6 +230,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>CommercialPowerConsumption</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">commercial power consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ConsumptionEvent</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">consumption event</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -246,6 +310,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>WindEnergySource</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">wind energy source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>date</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">date</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
