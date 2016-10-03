@@ -1,4 +1,5 @@
 @prefix prov:          <http://www.w3.org/ns/prov#> .
+@prefix np:	       <http://www.nanopub.org/nschema#>.
 @prefix dcat:          <http://www.w3.org/ns/dcat#> .
 @prefix dcterms:       <http://purl.org/dc/terms/> .
 @prefix void:          <http://rdfs.org/ns/void#> .
@@ -30,10 +31,10 @@
 			"eg"  : "http://semanticweb.org/energysources/",
 			"prov": "http://www.w3.org/ns/prov#",
 			"state": "http://www.semanticweb.org/us-state-model/",
+			"np": "http://www.nanopub.org/nschema#",
 			"hasValue" : 
 				{
-				 "@id": "http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#hasValue",
-				 "@type": "xsd:decimal"
+				 "@id": "http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#hasValue"
 				},
 			"date" :
 				{
@@ -54,14 +55,17 @@
 			"hasValue": [
 			{
 				"@if" : "row.ENERGY_SOURCE.lower() == 'petroleum (barrels)'" ,
+				"@type": "xsd:decimal",
 				"@value": "{{42 * row.CONSUMPTION}}"
 			},
 			{
 				"@if" : "row.ENERGY_SOURCE.lower() == 'natural gas (mcf)'" ,
+				"@type": "xsd:decimal",
 				"@value":  "{{1000 * row.CONSUMPTION}}"
 			},
 			{
 				"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
+				"@type": "xsd:decimal",
 				"@value":  "{{row.CONSUMPTION}}"
 			}],
 			"obo:usesStandard": [{
@@ -76,7 +80,7 @@
 				"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
 				"@id": "obo:Ton" 
 			}],
-			"obo:ofCharacteristic": "eg:ConsumptionAmount"
+			"obo:ofCharacteristic": { "@id": "eg:ConsumptionAmount" }
 		},
 		{
 			"@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent",
@@ -324,6 +328,10 @@
 				 "@id": "state:Wyoming"
 				}
 			]
+		},
+		{
+		 "@id": "http://semanticweb.org/EnergyGraph/nanopublications/consumption_monthly2001-2006_FINAL-{{row.name}}-Nanopublication",
+		 "@type": "np:Assertion"
 		}]''' ;
 	].
 
