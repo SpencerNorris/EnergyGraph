@@ -10,7 +10,7 @@ RECORD OF PROCESSING STEPS
 
 3) Changing "TYPE OF PRODUCER" to "SECTOR_NAME" for consistency between sheets, make Setlr files cleaner when defining pipeline.
 
-3) Removing commas from CONSUMPTION, SECTOR_NAME columns to make sure CSV is well-formed.
+4) Removing commas from "CONSUMPTION", "SECTOR_NAME" columns to make sure CSV is well-formed.
 
 
 ONTOLOGY
