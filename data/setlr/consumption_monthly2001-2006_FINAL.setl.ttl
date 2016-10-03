@@ -194,6 +194,94 @@
 				{
 				 "@if": "row.STATE.upper() == 'LA'" ,
 				 "@id": "state:Louisiana"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'ME'" ,
+				 "@id": "state:Maine"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'MD'" ,
+				 "@id": "state:Maryland"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'MA'" ,
+				 "@id": "state:Massachusetts"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'MI'" ,
+				 "@id": "state:Michigan"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'MN'" ,
+				 "@id": "state:Minnesota"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'MS'" ,
+				 "@id": "state:Mississippi"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'MO'" ,
+				 "@id": "state:Missouri"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'MT'" ,
+				 "@id": "state:Montana"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'NE'" ,
+				 "@id": "state:Nebraska"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'NV'" ,
+				 "@id": "state:Nevada"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'NH'" ,
+				 "@id": "state:NewHampshire"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'NJ'" ,
+				 "@id": "state:NewJersey"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'NM'" ,
+				 "@id": "state:NewMexico"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'NY'" ,
+				 "@id": "state:NewYork"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'NC'" ,
+				 "@id": "state:NorthCarolina"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'ND'" ,
+				 "@id": "state:NorthDakota"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'OH'" ,
+				 "@id": "state:Ohio"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'OK'" ,
+				 "@id": "state:Oklahoma"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'OR'" ,
+				 "@id": "state:Oregon"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'PA'" ,
+				 "@id": "state:Pennsylvania"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'RI'" ,
+				 "@id": "state:RhodeIsland"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'SC'" ,
+				 "@id": "state:SouthCarolina"
 				}
 			]
 		}]''' ;
