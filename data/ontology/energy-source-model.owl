@@ -30,6 +30,9 @@
         <Class IRI="CommercialPowerConsumption"/>
     </Declaration>
     <Declaration>
+        <Class IRI="ConsumptionAmount"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ConsumptionEvent"/>
     </Declaration>
     <Declaration>
@@ -108,6 +111,10 @@
     <SubClassOf>
         <Class IRI="CommercialPowerConsumption"/>
         <Class IRI="ConsumptionSector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConsumptionAmount"/>
+        <Class IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-characteristics.owl#Amount"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ConsumptionEvent"/>
@@ -253,6 +260,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>CommercialPowerConsumption</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">commercial power consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ConsumptionAmount</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">consumption amount</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

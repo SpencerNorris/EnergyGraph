@@ -6,18 +6,22 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY us-state-model2 "http://www.semanticweb.org/us-state-model/#" >
     <!ENTITY us-state-model "http://www.semanticweb.org/spencer/us-state-model/#" >
 ]>
 
 
 <rdf:RDF xmlns="http://www.semanticweb.org/spencer/us-state-model/"
      xml:base="http://www.semanticweb.org/spencer/us-state-model/"
+     xmlns:us-state-model2="http://www.semanticweb.org/us-state-model/#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:us-state-model="http://www.semanticweb.org/spencer/us-state-model/#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/spencer/us-state-model/"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/us-state-model/">
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
+    </owl:Ontology>
     
 
 
@@ -32,11 +36,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/#stateAbbreviation -->
+    <!-- http://www.semanticweb.org/us-state-model/#stateAbbreviation -->
 
-    <owl:DatatypeProperty rdf:about="&us-state-model;stateAbbreviation">
+    <owl:DatatypeProperty rdf:about="&us-state-model2;stateAbbreviation">
         <rdfs:label xml:lang="en">state abbreviation</rdfs:label>
-        <rdfs:domain rdf:resource="&us-state-model;State"/>
+        <rdfs:domain rdf:resource="&us-state-model2;State"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
@@ -53,12 +57,13 @@
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/#State -->
+    <!-- http://www.semanticweb.org/us-state-model/#State -->
 
-    <owl:Class rdf:about="&us-state-model;State">
+    <owl:Class rdf:about="&us-state-model2;State">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Location"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&us-state-model;stateAbbreviation"/>
+                <owl:onProperty rdf:resource="&us-state-model2;stateAbbreviation"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;string"/>
             </owl:Restriction>
@@ -78,502 +83,502 @@
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Alabama -->
+    <!-- http://www.semanticweb.org/us-state-model/Alabama -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Alabama">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Alabama">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Alabama</rdfs:label>
-        <us-state-model:stateAbbreviation>AL</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>AL</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Alaska -->
+    <!-- http://www.semanticweb.org/us-state-model/Alaska -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Alaska">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Alaska">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Alaska</rdfs:label>
-        <us-state-model:stateAbbreviation>AK</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>AK</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Arizona -->
+    <!-- http://www.semanticweb.org/us-state-model/Arizona -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Arizona">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Arizona">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Arizona</rdfs:label>
-        <us-state-model:stateAbbreviation>AZ</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>AZ</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Arkansas -->
+    <!-- http://www.semanticweb.org/us-state-model/Arkansas -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Arkansas">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Arkansas">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Arkansas</rdfs:label>
-        <us-state-model:stateAbbreviation>AR</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>AR</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/California -->
+    <!-- http://www.semanticweb.org/us-state-model/California -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/California">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/California">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">California</rdfs:label>
-        <us-state-model:stateAbbreviation>CA</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>CA</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Connecticut -->
+    <!-- http://www.semanticweb.org/us-state-model/Connecticut -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Connecticut">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Connecticut">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Connecticut</rdfs:label>
-        <us-state-model:stateAbbreviation>CT</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>CT</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Delaware -->
+    <!-- http://www.semanticweb.org/us-state-model/Delaware -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Delaware">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Delaware">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Delaware</rdfs:label>
-        <us-state-model:stateAbbreviation>DE</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>DE</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Florida -->
+    <!-- http://www.semanticweb.org/us-state-model/Florida -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Florida">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Florida">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Florida</rdfs:label>
-        <us-state-model:stateAbbreviation>FL</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>FL</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Georgia -->
+    <!-- http://www.semanticweb.org/us-state-model/Georgia -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Georgia">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Georgia">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Georgia</rdfs:label>
-        <us-state-model:stateAbbreviation>GA</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>GA</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Hawaii -->
+    <!-- http://www.semanticweb.org/us-state-model/Hawaii -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Hawaii">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Hawaii">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Hawaii</rdfs:label>
-        <us-state-model:stateAbbreviation>HI</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>HI</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Idaho -->
+    <!-- http://www.semanticweb.org/us-state-model/Idaho -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Idaho">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Idaho">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Idaho</rdfs:label>
-        <us-state-model:stateAbbreviation>ID</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>ID</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Illinois -->
+    <!-- http://www.semanticweb.org/us-state-model/Illinois -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Illinois">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Illinois">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Illinois</rdfs:label>
-        <us-state-model:stateAbbreviation>IL</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>IL</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Indiana -->
+    <!-- http://www.semanticweb.org/us-state-model/Indiana -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Indiana">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Indiana">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Indiana</rdfs:label>
-        <us-state-model:stateAbbreviation>IN</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>IN</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Iowa -->
+    <!-- http://www.semanticweb.org/us-state-model/Iowa -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Iowa">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Iowa">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Iowa</rdfs:label>
-        <us-state-model:stateAbbreviation>IA</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>IA</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Kansas -->
+    <!-- http://www.semanticweb.org/us-state-model/Kansas -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Kansas">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Kansas">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Kansas</rdfs:label>
-        <us-state-model:stateAbbreviation>KS</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>KS</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Kentucky -->
+    <!-- http://www.semanticweb.org/us-state-model/Kentucky -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Kentucky">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Kentucky">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Kentucky</rdfs:label>
-        <us-state-model:stateAbbreviation>KY</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>KY</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Louisiana -->
+    <!-- http://www.semanticweb.org/us-state-model/Louisiana -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Louisiana">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Louisiana">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Louisiana</rdfs:label>
-        <us-state-model:stateAbbreviation>LA</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>LA</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Maine -->
+    <!-- http://www.semanticweb.org/us-state-model/Maine -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Maine">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Maine">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Maine</rdfs:label>
-        <us-state-model:stateAbbreviation>ME</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>ME</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Maryland -->
+    <!-- http://www.semanticweb.org/us-state-model/Maryland -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Maryland">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Maryland">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Maryland</rdfs:label>
-        <us-state-model:stateAbbreviation>MD</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>MD</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Massachusetts -->
+    <!-- http://www.semanticweb.org/us-state-model/Massachusetts -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Massachusetts">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Massachusetts">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Massachusetts</rdfs:label>
-        <us-state-model:stateAbbreviation>MA</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>MA</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Michigan -->
+    <!-- http://www.semanticweb.org/us-state-model/Michigan -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Michigan">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Michigan">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Michigan</rdfs:label>
-        <us-state-model:stateAbbreviation>MI</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>MI</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Minnesota -->
+    <!-- http://www.semanticweb.org/us-state-model/Minnesota -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Minnesota">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Minnesota">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Minnesota</rdfs:label>
-        <us-state-model:stateAbbreviation>MN</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>MN</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Mississippi -->
+    <!-- http://www.semanticweb.org/us-state-model/Mississippi -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Mississippi">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Mississippi">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Mississippi</rdfs:label>
-        <us-state-model:stateAbbreviation>MS</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>MS</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Missouri -->
+    <!-- http://www.semanticweb.org/us-state-model/Missouri -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Missouri">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Missouri">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Missouri</rdfs:label>
-        <us-state-model:stateAbbreviation>MO</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>MO</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Montana -->
+    <!-- http://www.semanticweb.org/us-state-model/Montana -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Montana">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Montana">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Montana</rdfs:label>
-        <us-state-model:stateAbbreviation>MT</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>MT</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Nebraska -->
+    <!-- http://www.semanticweb.org/us-state-model/Nebraska -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Nebraska">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Nebraska">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Nebraska</rdfs:label>
-        <us-state-model:stateAbbreviation>NE</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>NE</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Nevada -->
+    <!-- http://www.semanticweb.org/us-state-model/Nevada -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Nevada">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Nevada">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Nevada</rdfs:label>
-        <us-state-model:stateAbbreviation>NV</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>NV</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/NewHampshire -->
+    <!-- http://www.semanticweb.org/us-state-model/NewHampshire -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/NewHampshire">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/NewHampshire">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">New Hampshire</rdfs:label>
-        <us-state-model:stateAbbreviation>NH</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>NH</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/NewJersey -->
+    <!-- http://www.semanticweb.org/us-state-model/NewJersey -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/NewJersey">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/NewJersey">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">New Jersey</rdfs:label>
-        <us-state-model:stateAbbreviation>NJ</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>NJ</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/NewMexico -->
+    <!-- http://www.semanticweb.org/us-state-model/NewMexico -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/NewMexico">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/NewMexico">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">New Mexico</rdfs:label>
-        <us-state-model:stateAbbreviation>NM</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>NM</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/NewYork -->
+    <!-- http://www.semanticweb.org/us-state-model/NewYork -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/NewYork">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/NewYork">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">New York</rdfs:label>
-        <us-state-model:stateAbbreviation>NY</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>NY</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/NorthCarolina -->
+    <!-- http://www.semanticweb.org/us-state-model/NorthCarolina -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/NorthCarolina">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/NorthCarolina">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">North Carolina</rdfs:label>
-        <us-state-model:stateAbbreviation>NC</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>NC</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/NorthDakota -->
+    <!-- http://www.semanticweb.org/us-state-model/NorthDakota -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/NorthDakota">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/NorthDakota">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">North Dakota</rdfs:label>
-        <us-state-model:stateAbbreviation>ND</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>ND</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Ohio -->
+    <!-- http://www.semanticweb.org/us-state-model/Ohio -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Ohio">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Ohio">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Ohio</rdfs:label>
-        <us-state-model:stateAbbreviation>OH</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>OH</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Oklahoma -->
+    <!-- http://www.semanticweb.org/us-state-model/Oklahoma -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Oklahoma">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Oklahoma">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Oklahoma</rdfs:label>
-        <us-state-model:stateAbbreviation>OK</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>OK</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Oregon -->
+    <!-- http://www.semanticweb.org/us-state-model/Oregon -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Oregon">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Oregon">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Oregon</rdfs:label>
-        <us-state-model:stateAbbreviation>OR</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>OR</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Pennsylvania -->
+    <!-- http://www.semanticweb.org/us-state-model/Pennsylvania -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Pennsylvania">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Pennsylvania">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Pennsylvania</rdfs:label>
-        <us-state-model:stateAbbreviation>PA</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>PA</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/RhodeIsland -->
+    <!-- http://www.semanticweb.org/us-state-model/RhodeIsland -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/RhodeIsland">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/RhodeIsland">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Rhode Island</rdfs:label>
-        <us-state-model:stateAbbreviation>RI</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>RI</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/SouthCarolina -->
+    <!-- http://www.semanticweb.org/us-state-model/SouthCarolina -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/SouthCarolina">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/SouthCarolina">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">South Carolina</rdfs:label>
-        <us-state-model:stateAbbreviation>SC</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>SC</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/SouthDakota -->
+    <!-- http://www.semanticweb.org/us-state-model/SouthDakota -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/SouthDakota">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/SouthDakota">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">South Dakota</rdfs:label>
-        <us-state-model:stateAbbreviation>SD</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>SD</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Tennessee -->
+    <!-- http://www.semanticweb.org/us-state-model/Tennessee -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Tennessee">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Tennessee">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Tennessee</rdfs:label>
-        <us-state-model:stateAbbreviation>TN</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>TN</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Texas -->
+    <!-- http://www.semanticweb.org/us-state-model/Texas -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Texas">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Texas">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Texas</rdfs:label>
-        <us-state-model:stateAbbreviation>TX</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>TX</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Utah -->
+    <!-- http://www.semanticweb.org/us-state-model/Utah -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Utah">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Utah">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Utah</rdfs:label>
-        <us-state-model:stateAbbreviation>UT</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>UT</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Vermont -->
+    <!-- http://www.semanticweb.org/us-state-model/Vermont -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Vermont">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Vermont">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Vermont</rdfs:label>
-        <us-state-model:stateAbbreviation>VT</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>VT</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Virginia -->
+    <!-- http://www.semanticweb.org/us-state-model/Virginia -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Virginia">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Virginia">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Virginia</rdfs:label>
-        <us-state-model:stateAbbreviation>VA</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>VA</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Washington -->
+    <!-- http://www.semanticweb.org/us-state-model/Washington -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Washington">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Washington">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Washington</rdfs:label>
-        <us-state-model:stateAbbreviation>WA</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>WA</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/WestVirginia -->
+    <!-- http://www.semanticweb.org/us-state-model/WestVirginia -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/WestVirginia">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/WestVirginia">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">West Virginia</rdfs:label>
-        <us-state-model:stateAbbreviation>WV</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>WV</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Wisconsin -->
+    <!-- http://www.semanticweb.org/us-state-model/Wisconsin -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Wisconsin">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Wisconsin">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Wisconsin</rdfs:label>
-        <us-state-model:stateAbbreviation>WI</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>WI</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/Wyoming -->
+    <!-- http://www.semanticweb.org/us-state-model/Wyoming -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/spencer/us-state-model/Wyoming">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/us-state-model/Wyoming">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Wyoming</rdfs:label>
-        <us-state-model:stateAbbreviation>WY</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>WY</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/spencer/us-state-model/#Colorado -->
+    <!-- http://www.semanticweb.org/us-state-model/#Colorado -->
 
-    <owl:NamedIndividual rdf:about="&us-state-model;Colorado">
-        <rdf:type rdf:resource="&us-state-model;State"/>
+    <owl:NamedIndividual rdf:about="&us-state-model2;Colorado">
+        <rdf:type rdf:resource="&us-state-model2;State"/>
         <rdfs:label xml:lang="en">Colorado</rdfs:label>
-        <us-state-model:stateAbbreviation>CO</us-state-model:stateAbbreviation>
+        <us-state-model2:stateAbbreviation>CO</us-state-model2:stateAbbreviation>
     </owl:NamedIndividual>
 </rdf:RDF>
 
