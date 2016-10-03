@@ -29,8 +29,9 @@
 		prov:value '''[{
 			"@id": "http://semanticweb.org/EnergyGraph/{{table.name}}-{{row.name}}-Observation" ,
 			"@type": "obo:Observation" ,
-			"obo:hasMeasurement": "http://semanticweb.org/EnergyGraph/{{table.name}}-{{row.name}}-Measurement" ,
-			"obo:ofEntity": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent"
+			"obo:hasMeasurement": {"@id": "http://semanticweb.org/EnergyGraph/{{table.name}}-{{row.name}}-Measurement" } ,
+			"obo:ofEntity": {"@id":  "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent" },
+			"obo:hasValue": "{{row.CONSUMPTION}}"
 		}]''' ;
 	].
 
