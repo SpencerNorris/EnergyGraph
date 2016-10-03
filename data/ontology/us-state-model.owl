@@ -618,6 +618,7 @@
     <owl:NamedIndividual rdf:about="&us-state-model3;USEastNorthCentral">
         <rdf:type rdf:resource="&us-state-model3;USDivision"/>
         <us-state-model3:divisionNumber rdf:datatype="&xsd;integer">3</us-state-model3:divisionNumber>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USMidwest"/>
     </owl:NamedIndividual>
     
 
@@ -627,6 +628,7 @@
     <owl:NamedIndividual rdf:about="&us-state-model3;USEastSouthCentral">
         <rdf:type rdf:resource="&us-state-model3;USDivision"/>
         <us-state-model3:divisionNumber rdf:datatype="&xsd;integer">6</us-state-model3:divisionNumber>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USSouth"/>
     </owl:NamedIndividual>
     
 
@@ -636,6 +638,7 @@
     <owl:NamedIndividual rdf:about="&us-state-model3;USMidAtlantic">
         <rdf:type rdf:resource="&us-state-model3;USDivision"/>
         <us-state-model3:divisionNumber rdf:datatype="&xsd;integer">2</us-state-model3:divisionNumber>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USNortheast"/>
     </owl:NamedIndividual>
     
 
@@ -644,6 +647,7 @@
 
     <owl:NamedIndividual rdf:about="&us-state-model3;USMidwest">
         <rdf:type rdf:resource="&us-state-model3;USRegion"/>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;UnitedStatesOfAmerica"/>
     </owl:NamedIndividual>
     
 
@@ -653,6 +657,7 @@
     <owl:NamedIndividual rdf:about="&us-state-model3;USMountain">
         <rdf:type rdf:resource="&us-state-model3;USDivision"/>
         <us-state-model3:divisionNumber rdf:datatype="&xsd;integer">8</us-state-model3:divisionNumber>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USWest"/>
     </owl:NamedIndividual>
     
 
@@ -662,6 +667,7 @@
     <owl:NamedIndividual rdf:about="&us-state-model3;USNewEngland">
         <rdf:type rdf:resource="&us-state-model3;USDivision"/>
         <us-state-model3:divisionNumber rdf:datatype="&xsd;integer">1</us-state-model3:divisionNumber>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USNortheast"/>
     </owl:NamedIndividual>
     
 
@@ -670,6 +676,7 @@
 
     <owl:NamedIndividual rdf:about="&us-state-model3;USNortheast">
         <rdf:type rdf:resource="&us-state-model3;USRegion"/>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;UnitedStatesOfAmerica"/>
     </owl:NamedIndividual>
     
 
@@ -679,6 +686,7 @@
     <owl:NamedIndividual rdf:about="&us-state-model3;USPacific">
         <rdf:type rdf:resource="&us-state-model3;USDivision"/>
         <us-state-model3:divisionNumber rdf:datatype="&xsd;integer">9</us-state-model3:divisionNumber>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USWest"/>
     </owl:NamedIndividual>
     
 
@@ -687,6 +695,7 @@
 
     <owl:NamedIndividual rdf:about="&us-state-model3;USSouth">
         <rdf:type rdf:resource="&us-state-model3;USRegion"/>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;UnitedStatesOfAmerica"/>
     </owl:NamedIndividual>
     
 
@@ -696,6 +705,7 @@
     <owl:NamedIndividual rdf:about="&us-state-model3;USSouthAtlantic">
         <rdf:type rdf:resource="&us-state-model3;USDivision"/>
         <us-state-model3:divisionNumber rdf:datatype="&xsd;integer">5</us-state-model3:divisionNumber>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USSouth"/>
     </owl:NamedIndividual>
     
 
@@ -704,6 +714,7 @@
 
     <owl:NamedIndividual rdf:about="&us-state-model3;USWest">
         <rdf:type rdf:resource="&us-state-model3;USRegion"/>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;UnitedStatesOfAmerica"/>
     </owl:NamedIndividual>
     
 
@@ -713,6 +724,7 @@
     <owl:NamedIndividual rdf:about="&us-state-model3;USWestNorthCentral">
         <rdf:type rdf:resource="&us-state-model3;USDivision"/>
         <us-state-model3:divisionNumber rdf:datatype="&xsd;integer">4</us-state-model3:divisionNumber>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USMidwest"/>
     </owl:NamedIndividual>
     
 
@@ -722,6 +734,7 @@
     <owl:NamedIndividual rdf:about="&us-state-model3;USWestSouthCentral">
         <rdf:type rdf:resource="&us-state-model3;USDivision"/>
         <us-state-model3:divisionNumber rdf:datatype="&xsd;integer">7</us-state-model3:divisionNumber>
+        <us-state-model3:isPartOf rdf:resource="&us-state-model3;USSouth"/>
     </owl:NamedIndividual>
     
 
