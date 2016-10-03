@@ -22,6 +22,7 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://ecoinformatics.org/oboe/oboe.1.2/oboe.owl</Import>
+    <Import>http://www.w3.org/ns/prov-o-20130430</Import>
     <Declaration>
         <Class IRI="Coal"/>
     </Declaration>
@@ -36,9 +37,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="ElectricPowerConsumption"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="EnergyStorageMedium"/>
     </Declaration>
     <Declaration>
         <Class IRI="FootCubed"/>
@@ -92,6 +90,9 @@
         <Class IRI="#SolarEnergySource"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="ofEnergySource"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="ofSector"/>
     </Declaration>
     <Declaration>
@@ -115,8 +116,22 @@
     <SubClassOf>
         <Class IRI="ConsumptionEvent"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="ofEnergySource"/>
+            <Class IRI="#EnergySource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConsumptionEvent"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="ofSector"/>
             <Class IRI="ConsumptionSector"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConsumptionEvent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/ns/prov#atLocation"/>
+            <Class IRI="http://www.w3.org/ns/prov#Location"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -218,6 +233,14 @@
         <Class IRI="#NonRenewableEnergySource"/>
         <Class IRI="#RenewableEnergySource"/>
     </DisjointClasses>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="ofEnergySource"/>
+        <Class IRI="ConsumptionEvent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="ofEnergySource"/>
+        <Class IRI="#EnergySource"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="ofSector"/>
         <Class IRI="ConsumptionSector"/>
@@ -250,11 +273,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>ElectricPowerConsumption</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">electric power consumption</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>EnergyStorageMedium</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">energy storage medium</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

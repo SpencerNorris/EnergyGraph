@@ -282,6 +282,46 @@
 				{
 				 "@if": "row.STATE.upper() == 'SC'" ,
 				 "@id": "state:SouthCarolina"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'SD'" ,
+				 "@id": "state:SouthDakota"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'TN'" ,
+				 "@id": "state:Tennessee"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'TX'" ,
+				 "@id": "state:Texas"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'UT'" ,
+				 "@id": "state:Utah"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'VT'" ,
+				 "@id": "state:Vermont"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'VA'" ,
+				 "@id": "state:Virginia"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'WA'" ,
+				 "@id": "state:Washington"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'WV'" ,
+				 "@id": "state:WestVirginia"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'WI'" ,
+				 "@id": "state:Wisconsin"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'WY'" ,
+				 "@id": "state:Wyoming"
 				}
 			]
 		}]''' ;
