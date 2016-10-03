@@ -72,6 +72,9 @@
         <Class IRI="TotalElectricPowerIndustryConsumption"/>
     </Declaration>
     <Declaration>
+        <Class IRI="UnknownProtocol"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="UtilityElectricGeneratorConsumption"/>
     </Declaration>
     <Declaration>
@@ -213,6 +216,10 @@
         <Class IRI="ConsumptionSector"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="UnknownProtocol"/>
+        <Class IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Protocol"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="UtilityElectricGeneratorConsumption"/>
         <Class IRI="ConsumptionSector"/>
     </SubClassOf>
@@ -330,6 +337,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>TotalElectricPowerIndustryConsumption</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">total electric power industry consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>UnknownProtocol</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A protocol for measurement that is not identified by the source.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>UnknownProtocol</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">unknown protocol</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

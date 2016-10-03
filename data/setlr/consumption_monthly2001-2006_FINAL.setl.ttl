@@ -332,7 +332,7 @@
 		},
 		{
 		 "@id": "http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Characteristic",
-		 "@type": "obo:Characteristic",
+		 "@type": "eg:ConsumptionAmount",
 		 "obo:characteristicFor": "http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent"
 		}]''' ;
 	].
