@@ -6,6 +6,7 @@
 @prefix csvw:          <http://www.w3.org/ns/csvw#> .
 @prefix pv:            <http://purl.org/net/provenance/ns#> .
 @prefix eg:	       <http://semanticweb.org/energysources/> .
+@prefix state:	       <http://www.semanticweb.org/us-state-model/> .
 @prefix obo: 	       <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#> .
 @prefix xsd: 	       <http://www.w3.org/2001/XMLSchema#> .
 @prefix :              <http://example.com/setl/> .
@@ -26,6 +27,9 @@
 		setl:hasContext '''{
 			"xsd" : "http://www.w3.org/2001/XMLSchema#",
 			"obo" : "http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#",
+			"eg"  : "http://semanticweb.org/energysources/",
+			"prov": "http://www.w3.org/ns/prov#",
+			"state": "http://www.semanticweb.org/us-state-model/",
 			"hasValue" : 
 				{
 				 "@id": "http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#hasValue",
@@ -37,7 +41,8 @@
 				 "@type": "xsd:gYearMonth"           
 				}
 		}''' ;
-		prov:value '''[{
+		prov:value '''[
+		{
 			"@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Observation" ,
 			"@type": "obo:Observation" ,
 			"obo:hasMeasurement": {"@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Measurement" } ,
@@ -70,12 +75,87 @@
 			{
 				"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
 				"@id": "obo:Ton" 
-			}]
+			}],
+			"obo:ofCharacteristic": "obo:Amount"
 		},
 		{
 			"@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent",
-			"@type": "http://semanticweb.org/energysources/ConsumptionEvent",
-			"http://semanticweb.org/energysources/date": "{{row.YEAR}}-{{row.MONTH}}"
+			"@type": "eg:ConsumptionEvent",
+			"date": "{{row.YEAR}}-{{row.MONTH}}",
+			"eg:ofSector": [
+				{
+				 "@if": "row.SECTOR_NAME.lower() == 'total electric power industry'" ,
+				 "@id": "eg:TotalElectricPowerIndustryConsumption"
+				},
+				{
+				 "@if": "row.SECTOR_NAME.lower() == 'combined heat and power commercial power'" ,
+				 "@id": "eg:CommercialPowerConsumption"
+				},
+				{
+				 "@if": "row.SECTOR_NAME.lower() == 'combined heat and power electric power'" ,
+				 "@id": "eg:ElectricPowerConsumption"
+				},
+				{
+				 "@if": "row.SECTOR_NAME.lower() == 'combined heat and power industrial power'" ,
+				 "@id": "eg:IndustrialPowerConsumption"
+				},
+				{
+				 "@if": "row.SECTOR_NAME.lower() == 'electric generators electric utilities'" ,
+				 "@id": "eg:UtilityElectricGeneratorConsumption"
+				},
+				{
+				 "@if": "row.SECTOR_NAME.lower() == 'electric generators independent power producers'" ,
+				 "@id": "eg:IndependentProducerElectricGeneratorConsumption"
+				}
+			],
+			"eg:ofEnergySource": [
+				{
+					"@if" : "row.ENERGY_SOURCE.lower() == 'petroleum (barrels)'" ,
+					"@id": "eg:Petroleum" 
+				},
+				{
+					"@if" : "row.ENERGY_SOURCE.lower() == 'natural gas (mcf)'" ,
+					"@id": "eg:NaturalGas" 
+				},
+				{
+					"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
+					"@id": "obo:Coal" 
+				}
+			],
+			"prov:atLocation": [
+				{
+				 "@if": "row.STATE.lower() == 'AL'" ,
+				 "@id": "state:Alabama"
+				},
+				{
+				 "@if": "row.STATE.lower() == 'AK'" ,
+				 "@id": "state:Alaska"
+				},
+				{
+				 "@if": "row.STATE.lower() == 'AZ'" ,
+				 "@id": "state:Arizona"
+				},
+				{
+				 "@if": "row.STATE.lower() == 'AR'" ,
+				 "@id": "state:Arkansas"
+				},
+				{
+				 "@if": "row.STATE.lower() == 'CA'" ,
+				 "@id": "state:California"
+				},
+				{
+				 "@if": "row.STATE.lower() == 'CO'" ,
+				 "@id": "state:Colorado"
+				},
+				{
+				 "@if": "row.STATE.lower() == 'CT'" ,
+				 "@id": "state:Connecticut"
+				},
+				{
+				 "@if": "row.STATE.lower() == 'DE'" ,
+				 "@id": "state:Delaware"
+				}
+			]
 		}]''' ;
 	].
 
