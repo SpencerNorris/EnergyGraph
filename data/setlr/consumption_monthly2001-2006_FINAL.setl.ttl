@@ -6,7 +6,7 @@
 @prefix csvw:          <http://www.w3.org/ns/csvw#> .
 @prefix pv:            <http://purl.org/net/provenance/ns#> .
 @prefix eg:	       <http://semanticweb.org/energysources/> .
-@prefix oboe: 	       <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#> .
+@prefix obo: 	       <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#> .
 @prefix xsd: 	       <http://www.w3.org/2001/XMLSchema#> .
 @prefix :              <http://example.com/setl/> .
 
@@ -24,13 +24,13 @@
 		a setl:Transform, setl:JSLDT ;
 		prov:used :table;
 		setl:hasContext '''{
-			"oboe" : "http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#"
+			"obo" : "http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#"
 		}''' ;
 		prov:value '''[{
 			"@id": "http://semanticweb.org/EnergyGraph/{{table.name}}-{{row.name}}-Observation" ,
-			"@type": "oboe:Observation" ,
-			"oboe:hasMeasurement": "http://semanticweb.org/EnergyGraph/{{table.name}}-{{row.name}}-Measurement" ,
-			"oboe:ofEntity": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent"
+			"@type": "obo:Observation" ,
+			"obo:hasMeasurement": "http://semanticweb.org/EnergyGraph/{{table.name}}-{{row.name}}-Measurement" ,
+			"obo:ofEntity": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent"
 		}]''' ;
 	].
 
