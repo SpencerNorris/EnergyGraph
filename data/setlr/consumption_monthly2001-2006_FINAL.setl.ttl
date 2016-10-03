@@ -124,36 +124,76 @@
 			],
 			"prov:atLocation": [
 				{
-				 "@if": "row.STATE.lower() == 'AL'" ,
+				 "@if": "row.STATE.upper() == 'AL'" ,
 				 "@id": "state:Alabama"
 				},
 				{
-				 "@if": "row.STATE.lower() == 'AK'" ,
+				 "@if": "row.STATE.upper() == 'AK'" ,
 				 "@id": "state:Alaska"
 				},
 				{
-				 "@if": "row.STATE.lower() == 'AZ'" ,
+				 "@if": "row.STATE.upper() == 'AZ'" ,
 				 "@id": "state:Arizona"
 				},
 				{
-				 "@if": "row.STATE.lower() == 'AR'" ,
+				 "@if": "row.STATE.upper() == 'AR'" ,
 				 "@id": "state:Arkansas"
 				},
 				{
-				 "@if": "row.STATE.lower() == 'CA'" ,
+				 "@if": "row.STATE.upper() == 'CA'" ,
 				 "@id": "state:California"
 				},
 				{
-				 "@if": "row.STATE.lower() == 'CO'" ,
+				 "@if": "row.STATE.upper() == 'CO'" ,
 				 "@id": "state:Colorado"
 				},
 				{
-				 "@if": "row.STATE.lower() == 'CT'" ,
+				 "@if": "row.STATE.upper() == 'CT'" ,
 				 "@id": "state:Connecticut"
 				},
 				{
-				 "@if": "row.STATE.lower() == 'DE'" ,
+				 "@if": "row.STATE.upper() == 'DE'" ,
 				 "@id": "state:Delaware"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'FL'" ,
+				 "@id": "state:Florida"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'GA'" ,
+				 "@id": "state:Georgia"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'HI'" ,
+				 "@id": "state:Hawaii"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'ID'" ,
+				 "@id": "state:Idaho"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'IL'" ,
+				 "@id": "state:Illinois"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'IN'" ,
+				 "@id": "state:Indiana"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'IA'" ,
+				 "@id": "state:Iowa"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'KS'" ,
+				 "@id": "state:Kansas"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'KY'" ,
+				 "@id": "state:Kentucky"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'LA'" ,
+				 "@id": "state:Louisiana"
 				}
 			]
 		}]''' ;
