@@ -24,14 +24,20 @@
 		a setl:Transform, setl:JSLDT ;
 		prov:used :table;
 		setl:hasContext '''{
-			"obo" : "http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#"
+			"xsd" : "http://www.w3.org/2001/XMLSchema#",
+			"obo" : "http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#",
+			"hasValue" : 
+				{
+				 "@id": "http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#hasValue",
+				 "@type": "xsd:double"
+				}
 		}''' ;
 		prov:value '''[{
 			"@id": "http://semanticweb.org/EnergyGraph/{{table.name}}-{{row.name}}-Observation" ,
 			"@type": "obo:Observation" ,
 			"obo:hasMeasurement": {"@id": "http://semanticweb.org/EnergyGraph/{{table.name}}-{{row.name}}-Measurement" } ,
 			"obo:ofEntity": {"@id":  "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent" },
-			"obo:hasValue": "{{row.CONSUMPTION}}"
+			"hasValue": "{{row.CONSUMPTION}}"
 		}]''' ;
 	].
 
