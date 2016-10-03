@@ -1,5 +1,4 @@
 @prefix prov:          <http://www.w3.org/ns/prov#> .
-@prefix np:	       <http://www.nanopub.org/nschema#>.
 @prefix dcat:          <http://www.w3.org/ns/dcat#> .
 @prefix dcterms:       <http://purl.org/dc/terms/> .
 @prefix void:          <http://rdfs.org/ns/void#> .
@@ -31,7 +30,6 @@
 			"eg"  : "http://semanticweb.org/energysources/",
 			"prov": "http://www.w3.org/ns/prov#",
 			"state": "http://www.semanticweb.org/us-state-model/",
-			"np": "http://www.nanopub.org/nschema#",
 			"hasValue" : 
 				{
 				 "@id": "http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#hasValue"
@@ -47,7 +45,8 @@
 			"@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Observation" ,
 			"@type": "obo:Observation" ,
 			"obo:hasMeasurement": {"@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Measurement" } ,
-			"obo:ofEntity": {"@id":  "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent" }
+			"obo:ofEntity": {"@id":  "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent" },
+			"prov:wasDerivedFrom": {"@id": "http://semanticweb.org/EnergyGraph/tabular/consumption_monthly2001-2006_FINAL.csv" }
 		},
 		{
 			"@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Measurement" ,
@@ -80,7 +79,9 @@
 				"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
 				"@id": "obo:Ton" 
 			}],
-			"obo:ofCharacteristic": { "@id": "eg:ConsumptionAmount" }
+			"obo:ofCharacteristic": { "@id": "eg:ConsumptionAmount" },
+			"obo:usesProtocol": { "@id": "eg:UnknownProtocol" },
+			"obo:measurementFor": { "@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Observation"}
 		},
 		{
 			"@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent",
@@ -330,8 +331,7 @@
 			]
 		},
 		{
-		 "@id": "http://semanticweb.org/EnergyGraph/nanopublications/consumption_monthly2001-2006_FINAL-{{row.name}}-Nanopublication",
-		 "@type": "np:Assertion"
+		 "@id": "http://semanticweb.org/EnergyGraph/nanopublications/consumption_monthly2001-2006_FINAL-{{row.name}}-Nanopublication"
 		}]''' ;
 	].
 
