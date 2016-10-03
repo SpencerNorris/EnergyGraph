@@ -46,8 +46,8 @@
 			"@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Observation" ,
 			"@type": "obo:Observation" ,
 			"obo:hasMeasurement": {"@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Measurement" } ,
-			"obo:ofEntity": {"@id":  "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent" },
-		} ,
+			"obo:ofEntity": {"@id":  "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent" }
+		},
 		{
 			"@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Measurement" ,
 			"@type": "obo:Measurement",
@@ -64,8 +64,7 @@
 				"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
 				"@value":  "{{row.CONSUMPTION}}"
 			}],
-			"obo:usesStandard": [
-			{
+			"obo:usesStandard": [{
 				"@if" : "row.ENERGY_SOURCE.lower() == 'petroleum (barrels)'" ,
 				"@id": "obo:Gallon" 
 			},
@@ -77,7 +76,7 @@
 				"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
 				"@id": "obo:Ton" 
 			}],
-			"obo:ofCharacteristic": { "@id": "eg:ConsumptionAmount" }
+			"obo:ofCharacteristic": "eg:ConsumptionAmount"
 		},
 		{
 			"@id": "http://semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent",
@@ -325,7 +324,7 @@
 				 "@id": "state:Wyoming"
 				}
 			]
-		]''' ;
+		}]''' ;
 	].
 
 
