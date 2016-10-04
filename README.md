@@ -1,18 +1,23 @@
-Setlr files use following prefix to denote references to classes defined in energy-source-model.owl:
-@prefix eg:  <http://semanticweb.org/energysources> .
-
+The following namespaces are used to refer to elements in ```energy-source-model.owl``` and ```us-state-model.owl```, respectively:
+```
+@prefix eg:  <http://www.semanticweb.org/energysources/> .
+@prefix state: <http://www.semanticweb.org/us-state-model/> .
+```
 
 RECORD OF PROCESSING STEPS
 
-1) Tabular data initially represented as Excel workbooks. Stripping the different sheets out into their own files.
+1) Split workbook of national energy consumption statistics into individual spreadsheets
+2) Clean spreadsheets of formatting, such as colors, comment boxes and other artifacts
+3) Delete commas present in numbers and titles contained in spreadsheet
+4) Change column headers to single-word strings so they can be accessed with a templating engine
+5) Format time representations to appear such that they can be templated into a particular specification (e.g. translate months to numbers with one leading ‘0’ to support conformance to the xsd:gYearMonth specification)
+6) Export spreadsheet content to .csv file
+7) Generate .setl.ttl file to provide workflow and template to Setlr ETL capability
+8) Run Setlr to generate final RDF dataset
 
-2) Blowing away comments, colors, etc. in tables to prevent any wonkiness when exporting to csv.
+I've already done all of this but recorded the steps for the sake of reproducibility. To perform the Setlr extract again (step 8), do the following:
 
-3) Changing "TYPE OF PRODUCER" to "SECTOR_NAME" for consistency between sheets, make Setlr files cleaner when defining pipeline.
-
-4) Removing commas from "CONSUMPTION", "SECTOR_NAME" columns to make sure CSV is well-formed.
-
-
-ONTOLOGY
-Generating model for different types of energy sources
-Generating instance data for different states in the US
+```
+$ cd /path/to/EnergyGraph/data/
+$ python /path/to/Setlr/setlr.py ./setlr/consumption_monthly2001-2006_FINAL.setl.ttl
+```
