@@ -3,6 +3,9 @@ The following namespaces are used to refer to elements in ```energy-source-model
 @prefix eg:  <http://www.semanticweb.org/energysources/> .
 @prefix state: <http://www.semanticweb.org/us-state-model/> .
 ```
+<h2>Energy Source Model (energy-source-model.owl)</h2>
+The Energy Source Model provides a basis for defining terminology pertaining to the national energy grid. It defines class hierarchies for energy sources, sectors of consumption, and other concepts important for the domain application. It imports the Extensible Observation Ontology (OBOE) in order to provide a base model. At the moment, the class hierarchies are very barebones and don't have any additional rich semantic information beyond ```rdfs:subClassOf```; this will change as the model expands with new information.
+
 
 <h2>USA State Model (us-state-model.owl)</h2>
 The state model contains an OWL description of United States geography derived from the US Census Bureau's classification of states, divisions, and regions within the United States. According to this model, the US can be broken down into four regions, each of which can be broken down further into divisions and then into each of the 50 states. The model introduces the concepts Nation, Region, Division and State and uses ```state:isPartOf``` to define containment relations between instances of these classes.
