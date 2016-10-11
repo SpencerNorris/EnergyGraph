@@ -4,7 +4,11 @@ The following namespaces are used to refer to elements in ```energy-source-model
 @prefix state: <http://www.semanticweb.org/us-state-model/> .
 ```
 
-RECORD OF PROCESSING STEPS
+<h2>USA State Model (us-state-model.owl)</h2>
+The state model contains an OWL description of United States geography derived from the US Census Bureau's classification of states, divisions, and regions within the United States. According to this model, the US can be broken down into four regions, each of which can be broken down further into divisions and then into each of the 50 states. The model introduces the concepts Nation, Region, Division and State and uses ```state:isPartOf``` to define containment relations between instances of these classes.
+
+<h2>RECORD OF PROCESSING STEPS</h2>
+The following are steps that were performed in order to preprocess the tabular datasets and generate the final RDF.
 ```
 1) Split workbook of national energy consumption statistics into individual spreadsheets
 
