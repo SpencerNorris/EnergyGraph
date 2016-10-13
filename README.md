@@ -1,3 +1,11 @@
+<h2>Prerequisites</h2>
+<ul>
+<li>Python 2.7+</li>
+<li>A shell or bash</li>
+<li>Setlr: The Semantic Extract, Transform, and Load-er (Github repo <a href=https://github.com/tetherless-world/setlr>here</a>)
+</ul>
+
+<h2>Namespaces</h2>
 The following namespaces are used to refer to elements in ```energy-source-model.owl``` and ```us-state-model.owl```, respectively:
 ```
 @prefix eg:  <http://www.semanticweb.org/energysources/> .
