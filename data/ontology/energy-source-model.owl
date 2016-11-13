@@ -42,6 +42,9 @@
         <Class IRI="EnergyConsumption"/>
     </Declaration>
     <Declaration>
+        <Class IRI="EnergyGeneration"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="FootCubed"/>
     </Declaration>
     <Declaration>
@@ -149,6 +152,24 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="EnergyGeneration"/>
+        <Class IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EnergyGeneration"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="ofEnergySource"/>
+            <Class IRI="#EnergySource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EnergyGeneration"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/ns/prov#atLocation"/>
+            <Class IRI="http://www.w3.org/ns/prov#Location"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="FootCubed"/>
         <Class IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#DerivedUnit"/>
     </SubClassOf>
@@ -244,6 +265,10 @@
         <Class IRI="#RenewableEnergySource"/>
     </SubClassOf>
     <DisjointClasses>
+        <Class IRI="EnergyConsumption"/>
+        <Class IRI="EnergyGeneration"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#NonRenewableEnergySource"/>
         <Class IRI="#RenewableEnergySource"/>
     </DisjointClasses>
@@ -288,6 +313,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>EnergyConsumption</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">energy consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EnergyGeneration</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">energy generation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
