@@ -43,7 +43,7 @@ The state model contains an OWL description of United States geography derived f
 <h2>RECORD OF PROCESSING STEPS</h2>
 The following are steps that were performed in order to preprocess the tabular datasets and generate the final RDF.
 ```
-1) Split workbook of national energy consumption statistics into individual spreadsheets
+1) Split workbook of national energy consumption/generation statistics into individual spreadsheets
 
 2) Clean spreadsheets of formatting, such as colors, comment boxes and other artifacts
 
@@ -59,9 +59,11 @@ The following are steps that were performed in order to preprocess the tabular d
 
 8) Run Setlr to generate final RDF dataset
 ```
-I've already done all of this but recorded the steps for the sake of reproducibility. To perform the Setlr extract again (step 8), do the following:
+We've already done all of this but recorded the steps for the sake of reproducibility. To perform the Setlr extract again (step 8), do the following:
 
+<h2>Generating EnergyGraph</h2>
 ```
-$ cd /path/to/EnergyGraph/data/
-$ python /path/to/Setlr/setlr.py ./setlr/consumption_monthly2001-2006_FINAL.setl.ttl
+$ cd /path/to/EnergyGraph/
+$ sh munge.sh
 ```
+This will iterate over the `data/setlr` directory and call Setlr on each file; thus, only `.setl.ttl` files should be included here. You'll also likely need to change the values of `EG_HOME` and `SETLR_HOME` in `munge.sh`; these should point to the top-level directories for EnergyGraph and Setlr, respectively.
