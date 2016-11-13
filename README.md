@@ -21,10 +21,10 @@ The name of the source Excel sheet is used as the prefix for all conversion prod
 The individuals generated from the conversion use the name of their source document, the row of the spreadsheet from which they were derived (where the first row is indexed as 0), and the name of their type to create unique URIs. The following template is used:
 
 ```
-<http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-ROW_NUMBER-ENTITYTYPE>
+<http://www.semanticweb.org/EnergyGraph/NAME_OF_DATASET-ROW_NUMBER-ENTITYTYPE>
 ```
 
-Thus for an ```obo:Observation``` derived from the fifth column, the following URI would be assigned:
+Thus for an ```obo:Observation``` derived from the fifth column of `consumption_monthly2001-2006_FINAL`, the following URI would be assigned:
 ```
 <http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-4-Observation>
 ```
