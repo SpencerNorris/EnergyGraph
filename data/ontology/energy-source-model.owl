@@ -33,13 +33,13 @@
         <Class IRI="ConsumptionAmount"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ConsumptionEvent"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="ConsumptionSector"/>
     </Declaration>
     <Declaration>
         <Class IRI="ElectricPowerConsumption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EnergyConsumption"/>
     </Declaration>
     <Declaration>
         <Class IRI="FootCubed"/>
@@ -120,33 +120,33 @@
         <Class IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-characteristics.owl#Amount"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="ConsumptionEvent"/>
+        <Class IRI="ElectricPowerConsumption"/>
+        <Class IRI="ConsumptionSector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EnergyConsumption"/>
         <Class IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="ConsumptionEvent"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="ofEnergySource"/>
-            <Class IRI="#EnergySource"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="ConsumptionEvent"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="ofSector"/>
-            <Class IRI="ConsumptionSector"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="ConsumptionEvent"/>
+        <Class IRI="EnergyConsumption"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.w3.org/ns/prov#atLocation"/>
             <Class IRI="http://www.w3.org/ns/prov#Location"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="ElectricPowerConsumption"/>
-        <Class IRI="ConsumptionSector"/>
+        <Class IRI="EnergyConsumption"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="ofEnergySource"/>
+            <Class IRI="#EnergySource"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EnergyConsumption"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="ofSector"/>
+            <Class IRI="ConsumptionSector"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="FootCubed"/>
@@ -247,10 +247,6 @@
         <Class IRI="#NonRenewableEnergySource"/>
         <Class IRI="#RenewableEnergySource"/>
     </DisjointClasses>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="ofEnergySource"/>
-        <Class IRI="ConsumptionEvent"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="ofEnergySource"/>
         <Class IRI="#EnergySource"/>
@@ -274,11 +270,6 @@
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">consumption amount</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>ConsumptionEvent</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">consumption event</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ConsumptionSector</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A subdivision of net national energy consumption</Literal>
@@ -292,6 +283,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>ElectricPowerConsumption</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">electric power consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EnergyConsumption</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">energy consumption</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
