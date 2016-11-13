@@ -15,7 +15,7 @@ The following namespaces are used to refer to elements in ```energy-source-model
 <h2>Naming Conventions</h2>
 
 <h3> File Structure</h3>
-The name of the source Excel sheet is used as the prefix for all conversion products. For example, ```consumption_monthly.xls``` was cleaned of formatting separated out into separate files for each sheet, with the name of the sheet appended to the name of the original file; the sheet ```consumption_monthly2001-2006_FINAL.xls``` is one of the resulting files. This is then exported to ```consumption_monthly2001-2006_FINAL.csv```. Lastly, the file ```consumption_monthly2001-2006_FINAL.setl.ttl``` is used to perform the conversion of ```consumption_monthly2001-2006_FINAL.csv``` to ```consumption_monthly2001-2006_FINAL.setl.ttl```. Got it?
+The name of the source Excel sheet is used as the prefix for all conversion products. For example, ```consumption_monthly.xls``` was cleaned of formatting separated out into separate files for each sheet, with the name of the sheet appended to the name of the original file; the sheet ```consumption_monthly2001-2006_FINAL.xls``` is one of the resulting files. This is then exported to ```consumption_monthly2001-2006_FINAL.csv```. Lastly, the file ```consumption_monthly2001-2006_FINAL.setl.ttl``` is used to perform the conversion of ```consumption_monthly2001-2006_FINAL.csv``` to ```consumption_monthly2001-2006_FINAL.ttl```. Got it?
 
 <h3>URI Generation</h3>
 The individuals generated from the conversion use the name of their source document, the row of the spreadsheet from which they were derived (where the first row is indexed as 0), and the name of their type to create unique URIs. The following template is used:
@@ -32,6 +32,7 @@ Its associated ```eg:ConsumptionEvent``` would have the following URI:
 ```
 <http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-4-ConsumptionEvent>
 ```
+You'll notice that the row number contained in the URI is one lower than the counted row (e.g. the number that appears next to the row when you open the file as a spreadsheet), as Setlr indexes from 0 when converting.
 
 <h2>Energy Source Model (energy-source-model.owl)</h2>
 The Energy Source Model provides a basis for defining terminology pertaining to the national energy grid. It defines class hierarchies for energy sources, sectors of consumption, and other concepts important for the domain application. It imports the Extensible Observation Ontology (OBOE) in order to provide a base model. At the moment, the class hierarchies are very barebones and don't have any additional rich semantic information beyond ```rdfs:subClassOf```; this will change as the model expands with new information.
