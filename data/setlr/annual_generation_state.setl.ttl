@@ -1,0 +1,337 @@
+@prefix prov:          <http://www.w3.org/ns/prov#> .
+@prefix dcat:          <http://www.w3.org/ns/dcat#> .
+@prefix dcterms:       <http://purl.org/dc/terms/> .
+@prefix void:          <http://rdfs.org/ns/void#> .
+@prefix setl:          <http://purl.org/twc/vocab/setl/> .
+@prefix csvw:          <http://www.w3.org/ns/csvw#> .
+@prefix pv:            <http://purl.org/net/provenance/ns#> .
+@prefix eg:	       <http://semanticweb.org/energysources/> .
+@prefix state:	       <http://www.semanticweb.org/us-state-model/> .
+@prefix obo: 	       <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#> .
+@prefix xsd: 	       <http://www.w3.org/2001/XMLSchema#> .
+@prefix :              <http://example.com/setl/> .
+
+:table a csvw:Table, setl:Table;
+  csvw:delimiter "," ;
+  prov:wasGeneratedBy [
+    a setl:Extract ;
+    prov:used <tabular/test.csv> ;
+  ].
+
+
+<http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL>
+	a void:Dataset;
+	prov:wasGeneratedBy [
+		a setl:Transform, setl:JSLDT ;
+		prov:used :table;
+		setl:hasContext '''{
+			"xsd" : "http://www.w3.org/2001/XMLSchema#",
+			"obo" : "http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#",
+			"eg"  : "http://semanticweb.org/energysources/",
+			"prov": "http://www.w3.org/ns/prov#",
+			"state": "http://www.semanticweb.org/us-state-model/",
+			"hasValue" : 
+				{
+				 "@id": "http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#hasValue",
+				 "@type": "xsd:decimal"
+				},
+			"date" :
+				{
+				 "@id": "http://semanticweb.org/energysources/date",
+				 "@type": "xsd:gYearMonth"           
+				}
+		}''' ;
+		prov:value '''[
+		{
+			"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-Observation" ,
+			"@type": "obo:Observation" ,
+			"obo:hasMeasurement": {"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-Measurement" } ,
+			"obo:ofEntity": {"@id":  "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-ConsumptionEvent" }
+		},
+		{
+			"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-Measurement" ,
+			"@type": "obo:Measurement",
+			"hasValue": [
+			{
+				"@if" : "row.ENERGY_SOURCE.lower() == 'petroleum (barrels)'" ,
+				"@value": "{{42 * row.CONSUMPTION}}"
+			},
+			{
+				"@if" : "row.ENERGY_SOURCE.lower() == 'natural gas (mcf)'" ,
+				"@value":  "{{1000 * row.CONSUMPTION}}"
+			},
+			{
+				"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
+				"@value":  "{{row.CONSUMPTION}}"
+			}],
+			"obo:usesStandard": [{
+				"@if" : "row.ENERGY_SOURCE.lower() == 'petroleum (barrels)'" ,
+				"@id": "obo:Gallon" 
+			},
+			{
+				"@if" : "row.ENERGY_SOURCE.lower() == 'natural gas (mcf)'" ,
+				"@id": "eg:FootCubed" 
+			},
+			{
+				"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
+				"@id": "obo:Ton" 
+			}],
+			"obo:ofCharacteristic": {"@id": "eg:ConsumptionAmount"}
+		},
+		{
+			"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-ConsumptionEvent",
+			"@type": "eg:ConsumptionEvent",
+			"date": "{{row.YEAR}}-{{row.MONTH}}",
+			"eg:ofSector": [
+				{
+				 "@if": "row.SECTOR_NAME.lower() == 'total electric power industry'" ,
+				 "@id": "eg:TotalElectricPowerIndustryConsumption"
+				},
+				{
+				 "@if": "row.SECTOR_NAME.lower() == 'combined heat and power commercial power'" ,
+				 "@id": "eg:CommercialPowerConsumption"
+				},
+				{
+				 "@if": "row.SECTOR_NAME.lower() == 'combined heat and power electric power'" ,
+				 "@id": "eg:ElectricPowerConsumption"
+				},
+				{
+				 "@if": "row.SECTOR_NAME.lower() == 'combined heat and power industrial power'" ,
+				 "@id": "eg:IndustrialPowerConsumption"
+				},
+				{
+				 "@if": "row.SECTOR_NAME.lower() == 'electric generators electric utilities'" ,
+				 "@id": "eg:UtilityElectricGeneratorConsumption"
+				},
+				{
+				 "@if": "row.SECTOR_NAME.lower() == 'electric generators independent power producers'" ,
+				 "@id": "eg:IndependentProducerElectricGeneratorConsumption"
+				}
+			],
+			"eg:ofEnergySource": [
+				{
+					"@if" : "row.ENERGY_SOURCE.lower() == 'petroleum (barrels)'" ,
+					"@id": "eg:Petroleum" 
+				},
+				{
+					"@if" : "row.ENERGY_SOURCE.lower() == 'natural gas (mcf)'" ,
+					"@id": "eg:NaturalGas" 
+				},
+				{
+					"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
+					"@id": "obo:Coal" 
+				}
+			],
+			"prov:atLocation": [
+				{
+				 "@if": "row.STATE.upper() == 'AL'" ,
+				 "@id": "state:Alabama"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'AK'" ,
+				 "@id": "state:Alaska"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'AZ'" ,
+				 "@id": "state:Arizona"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'AR'" ,
+				 "@id": "state:Arkansas"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'CA'" ,
+				 "@id": "state:California"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'CO'" ,
+				 "@id": "state:Colorado"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'CT'" ,
+				 "@id": "state:Connecticut"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'DE'" ,
+				 "@id": "state:Delaware"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'FL'" ,
+				 "@id": "state:Florida"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'GA'" ,
+				 "@id": "state:Georgia"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'HI'" ,
+				 "@id": "state:Hawaii"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'ID'" ,
+				 "@id": "state:Idaho"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'IL'" ,
+				 "@id": "state:Illinois"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'IN'" ,
+				 "@id": "state:Indiana"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'IA'" ,
+				 "@id": "state:Iowa"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'KS'" ,
+				 "@id": "state:Kansas"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'KY'" ,
+				 "@id": "state:Kentucky"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'LA'" ,
+				 "@id": "state:Louisiana"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'ME'" ,
+				 "@id": "state:Maine"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'MD'" ,
+				 "@id": "state:Maryland"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'MA'" ,
+				 "@id": "state:Massachusetts"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'MI'" ,
+				 "@id": "state:Michigan"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'MN'" ,
+				 "@id": "state:Minnesota"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'MS'" ,
+				 "@id": "state:Mississippi"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'MO'" ,
+				 "@id": "state:Missouri"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'MT'" ,
+				 "@id": "state:Montana"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'NE'" ,
+				 "@id": "state:Nebraska"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'NV'" ,
+				 "@id": "state:Nevada"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'NH'" ,
+				 "@id": "state:NewHampshire"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'NJ'" ,
+				 "@id": "state:NewJersey"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'NM'" ,
+				 "@id": "state:NewMexico"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'NY'" ,
+				 "@id": "state:NewYork"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'NC'" ,
+				 "@id": "state:NorthCarolina"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'ND'" ,
+				 "@id": "state:NorthDakota"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'OH'" ,
+				 "@id": "state:Ohio"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'OK'" ,
+				 "@id": "state:Oklahoma"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'OR'" ,
+				 "@id": "state:Oregon"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'PA'" ,
+				 "@id": "state:Pennsylvania"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'RI'" ,
+				 "@id": "state:RhodeIsland"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'SC'" ,
+				 "@id": "state:SouthCarolina"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'SD'" ,
+				 "@id": "state:SouthDakota"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'TN'" ,
+				 "@id": "state:Tennessee"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'TX'" ,
+				 "@id": "state:Texas"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'UT'" ,
+				 "@id": "state:Utah"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'VT'" ,
+				 "@id": "state:Vermont"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'VA'" ,
+				 "@id": "state:Virginia"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'WA'" ,
+				 "@id": "state:Washington"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'WV'" ,
+				 "@id": "state:WestVirginia"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'WI'" ,
+				 "@id": "state:Wisconsin"
+				},
+				{
+				 "@if": "row.STATE.upper() == 'WY'" ,
+				 "@id": "state:Wyoming"
+				}
+			]
+		}]''' ;
+	].
+
+
+<annual_generation_state_FINAL.ttl> a pv:File;
+    dcterms:format "text/turtle";
+    prov:wasGeneratedBy [
+      a setl:Load;
+      prov:used 
+	<http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL> ;
+    ].
