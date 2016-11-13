@@ -46,7 +46,7 @@
 			"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-Observation" ,
 			"@type": "obo:Observation" ,
 			"obo:hasMeasurement": {"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-Measurement" } ,
-			"obo:ofEntity": {"@id":  "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-EnergyConsumption" }
+			"obo:ofEntity": {"@id":  "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-EnergyGeneration" }
 		},
 		{
 			"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-Measurement" ,
@@ -79,8 +79,8 @@
 			"obo:ofCharacteristic": {"@id": "eg:ConsumptionAmount"}
 		},
 		{
-			"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-EnergyConsumption",
-			"@type": "eg:EnergyConsumption",
+			"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-EnergyGeneration",
+			"@type": "eg:EnergyGeneration",
 			"date": "{{row.YEAR}}-{{row.MONTH}}",
 			"eg:ofSector": [
 				{
