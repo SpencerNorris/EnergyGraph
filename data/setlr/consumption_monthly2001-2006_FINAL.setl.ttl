@@ -86,7 +86,15 @@
 		{
 			"@id": "http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent",
 			"@type": "eg:ConsumptionEvent",
-			"date": "{{row.YEAR}}-{{row.MONTH}}",
+			"date": [
+			{
+				"@if": "row.MONTH < 10",
+				"@value": "{{row.YEAR}}-0{{row.MONTH}}"
+			},
+			{
+				"@if": "row.MONTH > 10",
+				"@value": "{{row.YEAR}}-{{row.MONTH}}"
+			}],
 			"eg:ofSector": [
 				{
 				 "@if": "row.SECTOR_NAME.lower() == 'total electric power industry'" ,
@@ -333,7 +341,7 @@
 		{
 		 "@id": "http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-Characteristic",
 		 "@type": "eg:ConsumptionAmount",
-		 "obo:characteristicFor": "http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent"
+		 "obo:characteristicFor": { "@id": "http://www.semanticweb.org/EnergyGraph/consumption_monthly2001-2006_FINAL-{{row.name}}-ConsumptionEvent" }
 		}]''' ;
 	].
 
