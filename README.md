@@ -65,8 +65,6 @@ We've already done all of this but recorded the steps for the sake of reproducib
 <h2>Generating EnergyGraph</h2>
 ```
 $ cd /path/to/EnergyGraph/
-$ sh munge.sh
-OR
 $ bash munge.sh
 ```
 This will iterate over the `data/setlr` directory and call Setlr on each file; thus, only `.setl.ttl` files should be included here. You'll also likely need to change the values of `EG_HOME` and `SETLR_HOME` in `munge.sh`; these should point to the top-level directories for EnergyGraph and Setlr, respectively.
