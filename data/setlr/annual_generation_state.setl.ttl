@@ -54,15 +54,15 @@
 			"hasValue": [
 			{
 				"@if" : "row.ENERGY_SOURCE.lower() == 'petroleum (barrels)'" ,
-				"@value": "{{42 * row.CONSUMPTION}}"
+				"@value": "{{42 * row.GENERATION}}"
 			},
 			{
 				"@if" : "row.ENERGY_SOURCE.lower() == 'natural gas (mcf)'" ,
-				"@value":  "{{1000 * row.CONSUMPTION}}"
+				"@value":  "{{1000 * row.GENERATION}}"
 			},
 			{
 				"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
-				"@value":  "{{row.CONSUMPTION}}"
+				"@value":  "{{row.GENERATION}}"
 			}],
 			"obo:usesStandard": [{
 				"@if" : "row.ENERGY_SOURCE.lower() == 'petroleum (barrels)'" ,
@@ -76,7 +76,7 @@
 				"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
 				"@id": "obo:Ton" 
 			}],
-			"obo:ofCharacteristic": {"@id": "eg:GenerationAmount"}
+			"obo:ofCharacteristic": { "@id": "eg:GenerationAmount" }
 		},
 		{
 			"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-EnergyGeneration",
