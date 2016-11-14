@@ -51,37 +51,22 @@
 		{
 			"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-Measurement" ,
 			"@type": "obo:Measurement",
-			"hasValue": [
-			{
-				"@if" : "row.ENERGY_SOURCE.lower() == 'petroleum (barrels)'" ,
-				"@value": "{{42 * row.GENERATION}}"
-			},
-			{
-				"@if" : "row.ENERGY_SOURCE.lower() == 'natural gas (mcf)'" ,
-				"@value":  "{{1000 * row.GENERATION}}"
-			},
-			{
-				"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
-				"@value":  "{{row.GENERATION}}"
-			}],
-			"obo:usesStandard": [{
-				"@if" : "row.ENERGY_SOURCE.lower() == 'petroleum (barrels)'" ,
-				"@id": "obo:Gallon" 
-			},
-			{
-				"@if" : "row.ENERGY_SOURCE.lower() == 'natural gas (mcf)'" ,
-				"@id": "eg:FootCubed" 
-			},
-			{
-				"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
-				"@id": "obo:Ton" 
-			}],
+			"hasValue": "{{row.GENERATION}}",
+			"obo:usesStandard": {"@id": "eg:MegawattHour"},
 			"obo:ofCharacteristic": { "@id": "eg:GenerationAmount" }
 		},
 		{
 			"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-EnergyGeneration",
 			"@type": "eg:EnergyGeneration",
-			"date": "{{row.YEAR}}-{{row.MONTH}}",
+			"date": [
+				{ "@if": "row.MONTH < 10", 
+				  "@value": "{{row.YEAR}}-0{{row.MONTH}}"
+				},
+				{
+				  "@if": "row.MONTH >= 10",
+				  "@value": "{{row.YEAR}}-{{row.MONTH}}"
+				}
+			],
 			"eg:ofSector": [
 				{
 				 "@if": "row.SECTOR_NAME.lower() == 'total electric power industry'" ,
@@ -110,16 +95,16 @@
 			],
 			"eg:ofEnergySource": [
 				{
-					"@if" : "row.ENERGY_SOURCE.lower() == 'petroleum (barrels)'" ,
+					"@if" : "row.ENERGY_SOURCE.lower() == 'petroleum'" ,
 					"@id": "eg:Petroleum" 
 				},
 				{
-					"@if" : "row.ENERGY_SOURCE.lower() == 'natural gas (mcf)'" ,
+					"@if" : "row.ENERGY_SOURCE.lower() == 'natural gas'" ,
 					"@id": "eg:NaturalGas" 
 				},
 				{
-					"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
-					"@id": "obo:Coal" 
+					"@if" : "row.ENERGY_SOURCE.lower() == 'coal'" ,
+					"@id": "eg:Coal" 
 				}
 			],
 			"prov:atLocation": [
