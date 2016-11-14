@@ -1,0 +1,500 @@
+YEAR,MONTH,STATE,TYPE OF PRODUCER,ENERGY SOURCE,GENERATION (Megawatthours)
+2005,1,AK,Total Electric Power Industry,Coal,57267
+2005,1,AK,Total Electric Power Industry,Petroleum,103228
+2005,1,AK,Total Electric Power Industry,Natural Gas,338815
+2005,1,AK,Total Electric Power Industry,Hydroelectric Conventional,127526
+2005,1,AK,Total Electric Power Industry,Wind,23
+2005,1,AK,Total Electric Power Industry,Wood and Wood Derived Fuels,13
+2005,1,AK,Total Electric Power Industry,Other Biomass,381
+2005,1,AK,Total Electric Power Industry,Total,627253
+2005,1,AK,"Electric Generators, Electric Utilities",Coal,19039
+2005,1,AK,"Electric Generators, Electric Utilities",Petroleum,90278
+2005,1,AK,"Electric Generators, Electric Utilities",Natural Gas,328662
+2005,1,AK,"Electric Generators, Electric Utilities",Hydroelectric Conventional,127526
+2005,1,AK,"Electric Generators, Electric Utilities",Wind,23
+2005,1,AK,"Electric Generators, Electric Utilities",Total,565528
+2005,1,AK,"Combined Heat and Power, Electric Power",Coal,15278
+2005,1,AK,"Combined Heat and Power, Electric Power",Total,15278
+2005,1,AK,"Combined Heat and Power, Commercial Power",Coal,22950
+2005,1,AK,"Combined Heat and Power, Commercial Power",Petroleum,2120
+2005,1,AK,"Combined Heat and Power, Commercial Power",Wood and Wood Derived Fuels,13
+2005,1,AK,"Combined Heat and Power, Commercial Power",Total,25083
+2005,1,AK,"Combined Heat and Power, Industrial Power",Petroleum,10829
+2005,1,AK,"Combined Heat and Power, Industrial Power",Natural Gas,10153
+2005,1,AK,"Combined Heat and Power, Industrial Power",Other Biomass,381
+2005,1,AK,"Combined Heat and Power, Industrial Power",Total,21363
+2005,1,AL,Total Electric Power Industry,Coal,6850593
+2005,1,AL,Total Electric Power Industry,Petroleum,49269
+2005,1,AL,Total Electric Power Industry,Natural Gas,807897
+2005,1,AL,Total Electric Power Industry,Other Gases,14410
+2005,1,AL,Total Electric Power Industry,Nuclear,2961331
+2005,1,AL,Total Electric Power Industry,Hydroelectric Conventional,1078330
+2005,1,AL,Total Electric Power Industry,Wood and Wood Derived Fuels,327283
+2005,1,AL,Total Electric Power Industry,Other Biomass,1196
+2005,1,AL,Total Electric Power Industry,Other,3477
+2005,1,AL,Total Electric Power Industry,Total,12093786
+2005,1,AL,"Electric Generators, Electric Utilities",Coal,6817037
+2005,1,AL,"Electric Generators, Electric Utilities",Petroleum,10727
+2005,1,AL,"Electric Generators, Electric Utilities",Natural Gas,504125
+2005,1,AL,"Electric Generators, Electric Utilities",Nuclear,2961331
+2005,1,AL,"Electric Generators, Electric Utilities",Hydroelectric Conventional,1078330
+2005,1,AL,"Electric Generators, Electric Utilities",Total,11371549
+2005,1,AL,"Electric Generators, Independent Power Producers",Petroleum,19811
+2005,1,AL,"Electric Generators, Independent Power Producers",Natural Gas,164033
+2005,1,AL,"Electric Generators, Independent Power Producers",Other,160
+2005,1,AL,"Electric Generators, Independent Power Producers",Total,184004
+2005,1,AL,"Combined Heat and Power, Electric Power",Coal,15445
+2005,1,AL,"Combined Heat and Power, Electric Power",Natural Gas,65243
+2005,1,AL,"Combined Heat and Power, Electric Power",Wood and Wood Derived Fuels,18985
+2005,1,AL,"Combined Heat and Power, Electric Power",Total,99673
+2005,1,AL,"Combined Heat and Power, Industrial Power",Coal,18111
+2005,1,AL,"Combined Heat and Power, Industrial Power",Petroleum,18730
+2005,1,AL,"Combined Heat and Power, Industrial Power",Natural Gas,74496
+2005,1,AL,"Combined Heat and Power, Industrial Power",Other Gases,14410
+2005,1,AL,"Combined Heat and Power, Industrial Power",Wood and Wood Derived Fuels,308298
+2005,1,AL,"Combined Heat and Power, Industrial Power",Other Biomass,1196
+2005,1,AL,"Combined Heat and Power, Industrial Power",Other,3317
+2005,1,AL,"Combined Heat and Power, Industrial Power",Total,438559
+2005,1,AR,Total Electric Power Industry,Coal,2394529
+2005,1,AR,Total Electric Power Industry,Petroleum,17938
+2005,1,AR,Total Electric Power Industry,Natural Gas,185425
+2005,1,AR,Total Electric Power Industry,Nuclear,1394772
+2005,1,AR,Total Electric Power Industry,Hydroelectric Conventional,431374
+2005,1,AR,Total Electric Power Industry,Wood and Wood Derived Fuels,145428
+2005,1,AR,Total Electric Power Industry,Other Biomass,2379
+2005,1,AR,Total Electric Power Industry,Pumped Storage,4708
+2005,1,AR,Total Electric Power Industry,Other,723
+2005,1,AR,Total Electric Power Industry,Total,4577277
+2005,1,AR,"Electric Generators, Electric Utilities",Coal,2383932
+2005,1,AR,"Electric Generators, Electric Utilities",Petroleum,12753
+2005,1,AR,"Electric Generators, Electric Utilities",Natural Gas,29804
+2005,1,AR,"Electric Generators, Electric Utilities",Nuclear,1394772
+2005,1,AR,"Electric Generators, Electric Utilities",Hydroelectric Conventional,431701
+2005,1,AR,"Electric Generators, Electric Utilities",Pumped Storage,4708
+2005,1,AR,"Electric Generators, Electric Utilities",Total,4257670
+2005,1,AR,"Electric Generators, Independent Power Producers",Natural Gas,13202
+2005,1,AR,"Electric Generators, Independent Power Producers",Hydroelectric Conventional,-327
+2005,1,AR,"Electric Generators, Independent Power Producers",Total,12875
+2005,1,AR,"Combined Heat and Power, Electric Power",Petroleum,0
+2005,1,AR,"Combined Heat and Power, Electric Power",Natural Gas,119035
+2005,1,AR,"Combined Heat and Power, Electric Power",Other Biomass,2043
+2005,1,AR,"Combined Heat and Power, Electric Power",Total,121078
+2005,1,AR,"Combined Heat and Power, Commercial Power",Natural Gas,34
+2005,1,AR,"Combined Heat and Power, Commercial Power",Other Biomass,336
+2005,1,AR,"Combined Heat and Power, Commercial Power",Total,371
+2005,1,AR,"Combined Heat and Power, Industrial Power",Coal,10597
+2005,1,AR,"Combined Heat and Power, Industrial Power",Petroleum,5185
+2005,1,AR,"Combined Heat and Power, Industrial Power",Natural Gas,23349
+2005,1,AR,"Combined Heat and Power, Industrial Power",Wood and Wood Derived Fuels,145428
+2005,1,AR,"Combined Heat and Power, Industrial Power",Other Biomass,0
+2005,1,AR,"Combined Heat and Power, Industrial Power",Other,723
+2005,1,AR,"Combined Heat and Power, Industrial Power",Total,185282
+2005,1,AZ,Total Electric Power Industry,Coal,3424626
+2005,1,AZ,Total Electric Power Industry,Petroleum,3936
+2005,1,AZ,Total Electric Power Industry,Natural Gas,1522814
+2005,1,AZ,Total Electric Power Industry,Nuclear,2818173
+2005,1,AZ,Total Electric Power Industry,Hydroelectric Conventional,431670
+2005,1,AZ,Total Electric Power Industry,Solar Thermal and Photovoltaic,551
+2005,1,AZ,Total Electric Power Industry,Wood and Wood Derived Fuels,1032
+2005,1,AZ,Total Electric Power Industry,Other Biomass,3737
+2005,1,AZ,Total Electric Power Industry,Pumped Storage,-6282
+2005,1,AZ,Total Electric Power Industry,Total,8200258
+2005,1,AZ,"Electric Generators, Electric Utilities",Coal,3391288
+2005,1,AZ,"Electric Generators, Electric Utilities",Petroleum,3770
+2005,1,AZ,"Electric Generators, Electric Utilities",Natural Gas,696741
+2005,1,AZ,"Electric Generators, Electric Utilities",Nuclear,2818173
+2005,1,AZ,"Electric Generators, Electric Utilities",Hydroelectric Conventional,431670
+2005,1,AZ,"Electric Generators, Electric Utilities",Solar Thermal and Photovoltaic,551
+2005,1,AZ,"Electric Generators, Electric Utilities",Other Biomass,3409
+2005,1,AZ,"Electric Generators, Electric Utilities",Pumped Storage,-6282
+2005,1,AZ,"Electric Generators, Electric Utilities",Total,7339319
+2005,1,AZ,"Electric Generators, Independent Power Producers",Petroleum,0
+2005,1,AZ,"Electric Generators, Independent Power Producers",Natural Gas,708174
+2005,1,AZ,"Electric Generators, Independent Power Producers",Wood and Wood Derived Fuels,1032
+2005,1,AZ,"Electric Generators, Independent Power Producers",Total,709206
+2005,1,AZ,"Combined Heat and Power, Electric Power",Natural Gas,113171
+2005,1,AZ,"Combined Heat and Power, Electric Power",Total,113171
+2005,1,AZ,"Combined Heat and Power, Commercial Power",Petroleum,1
+2005,1,AZ,"Combined Heat and Power, Commercial Power",Natural Gas,4728
+2005,1,AZ,"Combined Heat and Power, Commercial Power",Other Biomass,329
+2005,1,AZ,"Combined Heat and Power, Commercial Power",Total,5059
+2005,1,AZ,"Combined Heat and Power, Industrial Power",Coal,33338
+2005,1,AZ,"Combined Heat and Power, Industrial Power",Petroleum,165
+2005,1,AZ,"Combined Heat and Power, Industrial Power",Natural Gas,0
+2005,1,AZ,"Combined Heat and Power, Industrial Power",Total,33503
+2005,1,CA,Total Electric Power Industry,Coal,158594
+2005,1,CA,Total Electric Power Industry,Petroleum,215441
+2005,1,CA,Total Electric Power Industry,Natural Gas,7131797
+2005,1,CA,Total Electric Power Industry,Other Gases,182475
+2005,1,CA,Total Electric Power Industry,Nuclear,3075117
+2005,1,CA,Total Electric Power Industry,Hydroelectric Conventional,2308102
+2005,1,CA,Total Electric Power Industry,Wind,174701
+2005,1,CA,Total Electric Power Industry,Solar Thermal and Photovoltaic,8117
+2005,1,CA,Total Electric Power Industry,Wood and Wood Derived Fuels,305580
+2005,1,CA,Total Electric Power Industry,Geothermal,1114264
+2005,1,CA,Total Electric Power Industry,Other Biomass,192620
+2005,1,CA,Total Electric Power Industry,Pumped Storage,-187181
+2005,1,CA,Total Electric Power Industry,Other,28702
+2005,1,CA,Total Electric Power Industry,Total,14708328
+2005,1,CA,"Electric Generators, Electric Utilities",Petroleum,5678
+2005,1,CA,"Electric Generators, Electric Utilities",Natural Gas,794253
+2005,1,CA,"Electric Generators, Electric Utilities",Other Gases,0
+2005,1,CA,"Electric Generators, Electric Utilities",Nuclear,3075117
+2005,1,CA,"Electric Generators, Electric Utilities",Hydroelectric Conventional,2274576
+2005,1,CA,"Electric Generators, Electric Utilities",Wind,1445
+2005,1,CA,"Electric Generators, Electric Utilities",Solar Thermal and Photovoltaic,9
+2005,1,CA,"Electric Generators, Electric Utilities",Geothermal,89489
+2005,1,CA,"Electric Generators, Electric Utilities",Other Biomass,19516
+2005,1,CA,"Electric Generators, Electric Utilities",Pumped Storage,-187181
+2005,1,CA,"Electric Generators, Electric Utilities",Total,6072902
+2005,1,CA,"Electric Generators, Independent Power Producers",Petroleum,101779
+2005,1,CA,"Electric Generators, Independent Power Producers",Natural Gas,3613142
+2005,1,CA,"Electric Generators, Independent Power Producers",Other Gases,0
+2005,1,CA,"Electric Generators, Independent Power Producers",Hydroelectric Conventional,33293
+2005,1,CA,"Electric Generators, Independent Power Producers",Wind,173256
+2005,1,CA,"Electric Generators, Independent Power Producers",Solar Thermal and Photovoltaic,8108
+2005,1,CA,"Electric Generators, Independent Power Producers",Wood and Wood Derived Fuels,215949
+2005,1,CA,"Electric Generators, Independent Power Producers",Geothermal,1024775
+2005,1,CA,"Electric Generators, Independent Power Producers",Other Biomass,115408
+2005,1,CA,"Electric Generators, Independent Power Producers",Other,7581
+2005,1,CA,"Electric Generators, Independent Power Producers",Total,5293292
+2005,1,CA,"Combined Heat and Power, Electric Power",Coal,121089
+2005,1,CA,"Combined Heat and Power, Electric Power",Petroleum,69854
+2005,1,CA,"Combined Heat and Power, Electric Power",Natural Gas,1624509
+2005,1,CA,"Combined Heat and Power, Electric Power",Other Gases,11826
+2005,1,CA,"Combined Heat and Power, Electric Power",Wood and Wood Derived Fuels,16943
+2005,1,CA,"Combined Heat and Power, Electric Power",Other Biomass,12008
+2005,1,CA,"Combined Heat and Power, Electric Power",Other,9860
+2005,1,CA,"Combined Heat and Power, Electric Power",Total,1866089
+2005,1,CA,"Combined Heat and Power, Commercial Power",Petroleum,103
+2005,1,CA,"Combined Heat and Power, Commercial Power",Natural Gas,130903
+2005,1,CA,"Combined Heat and Power, Commercial Power",Other Gases,0
+2005,1,CA,"Combined Heat and Power, Commercial Power",Hydroelectric Conventional,233
+2005,1,CA,"Combined Heat and Power, Commercial Power",Wood and Wood Derived Fuels,0
+2005,1,CA,"Combined Heat and Power, Commercial Power",Other Biomass,43469
+2005,1,CA,"Combined Heat and Power, Commercial Power",Other,0
+2005,1,CA,"Combined Heat and Power, Commercial Power",Total,174708
+2005,1,CA,"Combined Heat and Power, Industrial Power",Coal,37506
+2005,1,CA,"Combined Heat and Power, Industrial Power",Petroleum,38026
+2005,1,CA,"Combined Heat and Power, Industrial Power",Natural Gas,968990
+2005,1,CA,"Combined Heat and Power, Industrial Power",Other Gases,170649
+2005,1,CA,"Combined Heat and Power, Industrial Power",Wood and Wood Derived Fuels,72688
+2005,1,CA,"Combined Heat and Power, Industrial Power",Other Biomass,2218
+2005,1,CA,"Combined Heat and Power, Industrial Power",Other,11260
+2005,1,CA,"Combined Heat and Power, Industrial Power",Total,1301337
+2005,1,CO,Total Electric Power Industry,Coal,3119116
+2005,1,CO,Total Electric Power Industry,Petroleum,1387
+2005,1,CO,Total Electric Power Industry,Natural Gas,1036319
+2005,1,CO,Total Electric Power Industry,Other Gases,84
+2005,1,CO,Total Electric Power Industry,Hydroelectric Conventional,125000
+2005,1,CO,Total Electric Power Industry,Wind,105549
+2005,1,CO,Total Electric Power Industry,Wood and Wood Derived Fuels,0
+2005,1,CO,Total Electric Power Industry,Other Biomass,3040
+2005,1,CO,Total Electric Power Industry,Pumped Storage,-28731
+2005,1,CO,Total Electric Power Industry,Other,0
+2005,1,CO,Total Electric Power Industry,Total,4361764
+2005,1,CO,"Electric Generators, Electric Utilities",Coal,3094367
+2005,1,CO,"Electric Generators, Electric Utilities",Petroleum,1002
+2005,1,CO,"Electric Generators, Electric Utilities",Natural Gas,404596
+2005,1,CO,"Electric Generators, Electric Utilities",Other Gases,84
+2005,1,CO,"Electric Generators, Electric Utilities",Hydroelectric Conventional,119320
+2005,1,CO,"Electric Generators, Electric Utilities",Wind,4746
+2005,1,CO,"Electric Generators, Electric Utilities",Wood and Wood Derived Fuels,0
+2005,1,CO,"Electric Generators, Electric Utilities",Pumped Storage,-28731
+2005,1,CO,"Electric Generators, Electric Utilities",Total,3595384
+2005,1,CO,"Electric Generators, Independent Power Producers",Petroleum,279
+2005,1,CO,"Electric Generators, Independent Power Producers",Natural Gas,515630
+2005,1,CO,"Electric Generators, Independent Power Producers",Hydroelectric Conventional,5681
+2005,1,CO,"Electric Generators, Independent Power Producers",Wind,100803
+2005,1,CO,"Electric Generators, Independent Power Producers",Total,622393
+2005,1,CO,"Combined Heat and Power, Electric Power",Coal,24749
+2005,1,CO,"Combined Heat and Power, Electric Power",Petroleum,101
+2005,1,CO,"Combined Heat and Power, Electric Power",Natural Gas,106714
+2005,1,CO,"Combined Heat and Power, Electric Power",Other Biomass,3040
+2005,1,CO,"Combined Heat and Power, Electric Power",Total,134604
+2005,1,CO,"Combined Heat and Power, Commercial Power",Petroleum,4
+2005,1,CO,"Combined Heat and Power, Commercial Power",Natural Gas,4491
+2005,1,CO,"Combined Heat and Power, Commercial Power",Total,4495
+2005,1,CO,"Combined Heat and Power, Industrial Power",Petroleum,1
+2005,1,CO,"Combined Heat and Power, Industrial Power",Natural Gas,4888
+2005,1,CO,"Combined Heat and Power, Industrial Power",Other,0
+2005,1,CO,"Combined Heat and Power, Industrial Power",Total,4889
+2005,1,CT,Total Electric Power Industry,Coal,403471
+2005,1,CT,Total Electric Power Industry,Petroleum,526690
+2005,1,CT,Total Electric Power Industry,Natural Gas,510670
+2005,1,CT,Total Electric Power Industry,Other Gases,124
+2005,1,CT,Total Electric Power Industry,Nuclear,1517951
+2005,1,CT,Total Electric Power Industry,Hydroelectric Conventional,49329
+2005,1,CT,Total Electric Power Industry,Wood and Wood Derived Fuels,624
+2005,1,CT,Total Electric Power Industry,Other Biomass,56180
+2005,1,CT,Total Electric Power Industry,Pumped Storage,0
+2005,1,CT,Total Electric Power Industry,Other,56462
+2005,1,CT,Total Electric Power Industry,Total,3121500
+2005,1,CT,"Electric Generators, Electric Utilities",Petroleum,106
+2005,1,CT,"Electric Generators, Electric Utilities",Hydroelectric Conventional,4112
+2005,1,CT,"Electric Generators, Electric Utilities",Total,4218
+2005,1,CT,"Electric Generators, Independent Power Producers",Coal,259736
+2005,1,CT,"Electric Generators, Independent Power Producers",Petroleum,511703
+2005,1,CT,"Electric Generators, Independent Power Producers",Natural Gas,475149
+2005,1,CT,"Electric Generators, Independent Power Producers",Other Gases,124
+2005,1,CT,"Electric Generators, Independent Power Producers",Nuclear,1517951
+2005,1,CT,"Electric Generators, Independent Power Producers",Hydroelectric Conventional,45217
+2005,1,CT,"Electric Generators, Independent Power Producers",Wood and Wood Derived Fuels,624
+2005,1,CT,"Electric Generators, Independent Power Producers",Other Biomass,56180
+2005,1,CT,"Electric Generators, Independent Power Producers",Pumped Storage,0
+2005,1,CT,"Electric Generators, Independent Power Producers",Other,55356
+2005,1,CT,"Electric Generators, Independent Power Producers",Total,2922040
+2005,1,CT,"Combined Heat and Power, Electric Power",Coal,143735
+2005,1,CT,"Combined Heat and Power, Electric Power",Petroleum,363
+2005,1,CT,"Combined Heat and Power, Electric Power",Natural Gas,27222
+2005,1,CT,"Combined Heat and Power, Electric Power",Total,171321
+2005,1,CT,"Combined Heat and Power, Commercial Power",Petroleum,139
+2005,1,CT,"Combined Heat and Power, Commercial Power",Natural Gas,2740
+2005,1,CT,"Combined Heat and Power, Commercial Power",Total,2879
+2005,1,CT,"Combined Heat and Power, Industrial Power",Petroleum,14378
+2005,1,CT,"Combined Heat and Power, Industrial Power",Natural Gas,5558
+2005,1,CT,"Combined Heat and Power, Industrial Power",Other,1106
+2005,1,CT,"Combined Heat and Power, Industrial Power",Total,21042
+2005,1,DC,Total Electric Power Industry,Petroleum,2093
+2005,1,DC,Total Electric Power Industry,Total,2093
+2005,1,DC,"Electric Generators, Independent Power Producers",Petroleum,2093
+2005,1,DC,"Electric Generators, Independent Power Producers",Total,2093
+2005,1,DE,Total Electric Power Industry,Coal,426594
+2005,1,DE,Total Electric Power Industry,Petroleum,254027
+2005,1,DE,Total Electric Power Industry,Natural Gas,177890
+2005,1,DE,Total Electric Power Industry,Other Gases,23599
+2005,1,DE,Total Electric Power Industry,Total,882110
+2005,1,DE,"Electric Generators, Electric Utilities",Petroleum,987
+2005,1,DE,"Electric Generators, Electric Utilities",Natural Gas,1181
+2005,1,DE,"Electric Generators, Electric Utilities",Total,2168
+2005,1,DE,"Electric Generators, Independent Power Producers",Coal,406673
+2005,1,DE,"Electric Generators, Independent Power Producers",Petroleum,214663
+2005,1,DE,"Electric Generators, Independent Power Producers",Natural Gas,175312
+2005,1,DE,"Electric Generators, Independent Power Producers",Total,796648
+2005,1,DE,"Combined Heat and Power, Electric Power",Coal,9206
+2005,1,DE,"Combined Heat and Power, Electric Power",Petroleum,1275
+2005,1,DE,"Combined Heat and Power, Electric Power",Natural Gas,1327
+2005,1,DE,"Combined Heat and Power, Electric Power",Total,11807
+2005,1,DE,"Combined Heat and Power, Industrial Power",Coal,10715
+2005,1,DE,"Combined Heat and Power, Industrial Power",Petroleum,37103
+2005,1,DE,"Combined Heat and Power, Industrial Power",Natural Gas,70
+2005,1,DE,"Combined Heat and Power, Industrial Power",Other Gases,23599
+2005,1,DE,"Combined Heat and Power, Industrial Power",Total,71487
+2005,1,FL,Total Electric Power Industry,Coal,5641203
+2005,1,FL,Total Electric Power Industry,Petroleum,2300581
+2005,1,FL,Total Electric Power Industry,Natural Gas,5992514
+2005,1,FL,Total Electric Power Industry,Other Gases,929
+2005,1,FL,Total Electric Power Industry,Nuclear,2211608
+2005,1,FL,Total Electric Power Industry,Hydroelectric Conventional,26684
+2005,1,FL,Total Electric Power Industry,Wood and Wood Derived Fuels,175939
+2005,1,FL,Total Electric Power Industry,Other Biomass,220691
+2005,1,FL,Total Electric Power Industry,Other,284971
+2005,1,FL,Total Electric Power Industry,Total,16855120
+2005,1,FL,"Electric Generators, Electric Utilities",Coal,5200604
+2005,1,FL,"Electric Generators, Electric Utilities",Petroleum,2232468
+2005,1,FL,"Electric Generators, Electric Utilities",Natural Gas,5338323
+2005,1,FL,"Electric Generators, Electric Utilities",Nuclear,2211608
+2005,1,FL,"Electric Generators, Electric Utilities",Hydroelectric Conventional,26684
+2005,1,FL,"Electric Generators, Electric Utilities",Wood and Wood Derived Fuels,0
+2005,1,FL,"Electric Generators, Electric Utilities",Other Biomass,9338
+2005,1,FL,"Electric Generators, Electric Utilities",Other,0
+2005,1,FL,"Electric Generators, Electric Utilities",Total,15019025
+2005,1,FL,"Electric Generators, Independent Power Producers",Petroleum,42201
+2005,1,FL,"Electric Generators, Independent Power Producers",Natural Gas,336736
+2005,1,FL,"Electric Generators, Independent Power Producers",Other Gases,2
+2005,1,FL,"Electric Generators, Independent Power Producers",Wood and Wood Derived Fuels,20597
+2005,1,FL,"Electric Generators, Independent Power Producers",Other Biomass,153538
+2005,1,FL,"Electric Generators, Independent Power Producers",Other,116304
+2005,1,FL,"Electric Generators, Independent Power Producers",Total,669378
+2005,1,FL,"Combined Heat and Power, Electric Power",Coal,417322
+2005,1,FL,"Combined Heat and Power, Electric Power",Petroleum,1447
+2005,1,FL,"Combined Heat and Power, Electric Power",Natural Gas,236665
+2005,1,FL,"Combined Heat and Power, Electric Power",Other Gases,0
+2005,1,FL,"Combined Heat and Power, Electric Power",Wood and Wood Derived Fuels,14582
+2005,1,FL,"Combined Heat and Power, Electric Power",Other Biomass,31868
+2005,1,FL,"Combined Heat and Power, Electric Power",Other,0
+2005,1,FL,"Combined Heat and Power, Electric Power",Total,701884
+2005,1,FL,"Combined Heat and Power, Commercial Power",Petroleum,0
+2005,1,FL,"Combined Heat and Power, Commercial Power",Natural Gas,5610
+2005,1,FL,"Combined Heat and Power, Commercial Power",Other Biomass,3483
+2005,1,FL,"Combined Heat and Power, Commercial Power",Total,9093
+2005,1,FL,"Combined Heat and Power, Industrial Power",Coal,23277
+2005,1,FL,"Combined Heat and Power, Industrial Power",Petroleum,24465
+2005,1,FL,"Combined Heat and Power, Industrial Power",Natural Gas,75180
+2005,1,FL,"Combined Heat and Power, Industrial Power",Other Gases,927
+2005,1,FL,"Combined Heat and Power, Industrial Power",Wood and Wood Derived Fuels,140760
+2005,1,FL,"Combined Heat and Power, Industrial Power",Other Biomass,22464
+2005,1,FL,"Combined Heat and Power, Industrial Power",Other,168667
+2005,1,FL,"Combined Heat and Power, Industrial Power",Total,455740
+2005,1,GA,Total Electric Power Industry,Coal,6138322
+2005,1,GA,Total Electric Power Industry,Petroleum,95269
+2005,1,GA,Total Electric Power Industry,Natural Gas,494946
+2005,1,GA,Total Electric Power Industry,Nuclear,2748660
+2005,1,GA,Total Electric Power Industry,Hydroelectric Conventional,332915
+2005,1,GA,Total Electric Power Industry,Wood and Wood Derived Fuels,257694
+2005,1,GA,Total Electric Power Industry,Other Biomass,8050
+2005,1,GA,Total Electric Power Industry,Pumped Storage,-32520
+2005,1,GA,Total Electric Power Industry,Other,3501
+2005,1,GA,Total Electric Power Industry,Total,10046836
+2005,1,GA,"Electric Generators, Electric Utilities",Coal,6063234
+2005,1,GA,"Electric Generators, Electric Utilities",Petroleum,8604
+2005,1,GA,"Electric Generators, Electric Utilities",Natural Gas,96961
+2005,1,GA,"Electric Generators, Electric Utilities",Nuclear,2748660
+2005,1,GA,"Electric Generators, Electric Utilities",Hydroelectric Conventional,330041
+2005,1,GA,"Electric Generators, Electric Utilities",Pumped Storage,-32520
+2005,1,GA,"Electric Generators, Electric Utilities",Total,9214980
+2005,1,GA,"Electric Generators, Independent Power Producers",Petroleum,9749
+2005,1,GA,"Electric Generators, Independent Power Producers",Natural Gas,375345
+2005,1,GA,"Electric Generators, Independent Power Producers",Hydroelectric Conventional,848
+2005,1,GA,"Electric Generators, Independent Power Producers",Other Biomass,1458
+2005,1,GA,"Electric Generators, Independent Power Producers",Total,387400
+2005,1,GA,"Combined Heat and Power, Electric Power",Petroleum,0
+2005,1,GA,"Combined Heat and Power, Electric Power",Natural Gas,3665
+2005,1,GA,"Combined Heat and Power, Electric Power",Total,3665
+2005,1,GA,"Combined Heat and Power, Commercial Power",Petroleum,447
+2005,1,GA,"Combined Heat and Power, Commercial Power",Total,447
+2005,1,GA,"Combined Heat and Power, Industrial Power",Coal,75088
+2005,1,GA,"Combined Heat and Power, Industrial Power",Petroleum,76469
+2005,1,GA,"Combined Heat and Power, Industrial Power",Natural Gas,18975
+2005,1,GA,"Combined Heat and Power, Industrial Power",Hydroelectric Conventional,2026
+2005,1,GA,"Combined Heat and Power, Industrial Power",Wood and Wood Derived Fuels,257694
+2005,1,GA,"Combined Heat and Power, Industrial Power",Other Biomass,6592
+2005,1,GA,"Combined Heat and Power, Industrial Power",Other,3501
+2005,1,GA,"Combined Heat and Power, Industrial Power",Total,440345
+2005,1,HI,Total Electric Power Industry,Coal,134015
+2005,1,HI,Total Electric Power Industry,Petroleum,756579
+2005,1,HI,Total Electric Power Industry,Other Gases,3785
+2005,1,HI,Total Electric Power Industry,Hydroelectric Conventional,3757
+2005,1,HI,Total Electric Power Industry,Wind,353
+2005,1,HI,Total Electric Power Industry,Geothermal,18922
+2005,1,HI,Total Electric Power Industry,Other Biomass,28555
+2005,1,HI,Total Electric Power Industry,Other,13435
+2005,1,HI,Total Electric Power Industry,Total,959402
+2005,1,HI,"Electric Generators, Electric Utilities",Petroleum,539520
+2005,1,HI,"Electric Generators, Electric Utilities",Hydroelectric Conventional,761
+2005,1,HI,"Electric Generators, Electric Utilities",Wind,20
+2005,1,HI,"Electric Generators, Electric Utilities",Total,540301
+2005,1,HI,"Electric Generators, Independent Power Producers",Hydroelectric Conventional,1541
+2005,1,HI,"Electric Generators, Independent Power Producers",Wind,333
+2005,1,HI,"Electric Generators, Independent Power Producers",Geothermal,18922
+2005,1,HI,"Electric Generators, Independent Power Producers",Total,20796
+2005,1,HI,"Combined Heat and Power, Electric Power",Coal,134015
+2005,1,HI,"Combined Heat and Power, Electric Power",Petroleum,203955
+2005,1,HI,"Combined Heat and Power, Electric Power",Other Biomass,11936
+2005,1,HI,"Combined Heat and Power, Electric Power",Other,1289
+2005,1,HI,"Combined Heat and Power, Electric Power",Total,351194
+2005,1,HI,"Combined Heat and Power, Commercial Power",Petroleum,239
+2005,1,HI,"Combined Heat and Power, Commercial Power",Other Biomass,15459
+2005,1,HI,"Combined Heat and Power, Commercial Power",Other,12146
+2005,1,HI,"Combined Heat and Power, Commercial Power",Total,27844
+2005,1,HI,"Combined Heat and Power, Industrial Power",Petroleum,12865
+2005,1,HI,"Combined Heat and Power, Industrial Power",Other Gases,3785
+2005,1,HI,"Combined Heat and Power, Industrial Power",Hydroelectric Conventional,1455
+2005,1,HI,"Combined Heat and Power, Industrial Power",Other Biomass,1160
+2005,1,HI,"Combined Heat and Power, Industrial Power",Total,19266
+2005,1,IA,Total Electric Power Industry,Coal,3168193
+2005,1,IA,Total Electric Power Industry,Petroleum,14082
+2005,1,IA,Total Electric Power Industry,Natural Gas,150830
+2005,1,IA,Total Electric Power Industry,Nuclear,435019
+2005,1,IA,Total Electric Power Industry,Hydroelectric Conventional,75922
+2005,1,IA,Total Electric Power Industry,Wind,81050
+2005,1,IA,Total Electric Power Industry,Other Biomass,9963
+2005,1,IA,Total Electric Power Industry,Other,1037
+2005,1,IA,Total Electric Power Industry,Total,3936096
+2005,1,IA,"Electric Generators, Electric Utilities",Coal,3050009
+2005,1,IA,"Electric Generators, Electric Utilities",Petroleum,12937
+2005,1,IA,"Electric Generators, Electric Utilities",Natural Gas,149702
+2005,1,IA,"Electric Generators, Electric Utilities",Nuclear,435019
+2005,1,IA,"Electric Generators, Electric Utilities",Hydroelectric Conventional,74969
+2005,1,IA,"Electric Generators, Electric Utilities",Wind,12908
+2005,1,IA,"Electric Generators, Electric Utilities",Other Biomass,2821
+2005,1,IA,"Electric Generators, Electric Utilities",Other,1037
+2005,1,IA,"Electric Generators, Electric Utilities",Total,3739401
+2005,1,IA,"Electric Generators, Independent Power Producers",Petroleum,225
+2005,1,IA,"Electric Generators, Independent Power Producers",Natural Gas,8
+2005,1,IA,"Electric Generators, Independent Power Producers",Hydroelectric Conventional,953
+2005,1,IA,"Electric Generators, Independent Power Producers",Wind,68142
+2005,1,IA,"Electric Generators, Independent Power Producers",Other Biomass,4189
+2005,1,IA,"Electric Generators, Independent Power Producers",Total,73517
+2005,1,IA,"Combined Heat and Power, Commercial Power",Coal,22498
+2005,1,IA,"Combined Heat and Power, Commercial Power",Petroleum,914
+2005,1,IA,"Combined Heat and Power, Commercial Power",Natural Gas,1120
+2005,1,IA,"Combined Heat and Power, Commercial Power",Other Biomass,2953
+2005,1,IA,"Combined Heat and Power, Commercial Power",Total,27485
+2005,1,IA,"Combined Heat and Power, Industrial Power",Coal,95686
+2005,1,IA,"Combined Heat and Power, Industrial Power",Petroleum,7
+2005,1,IA,"Combined Heat and Power, Industrial Power",Natural Gas,0
+2005,1,IA,"Combined Heat and Power, Industrial Power",Total,95693
+2005,1,ID,Total Electric Power Industry,Coal,8360
+2005,1,ID,Total Electric Power Industry,Petroleum,1
+2005,1,ID,Total Electric Power Industry,Natural Gas,164538
+2005,1,ID,Total Electric Power Industry,Hydroelectric Conventional,564939
+2005,1,ID,Total Electric Power Industry,Wood and Wood Derived Fuels,47083
+2005,1,ID,Total Electric Power Industry,Other,2341
+2005,1,ID,Total Electric Power Industry,Total,787263
+2005,1,ID,"Electric Generators, Electric Utilities",Petroleum,1
+2005,1,ID,"Electric Generators, Electric Utilities",Natural Gas,1035
+2005,1,ID,"Electric Generators, Electric Utilities",Hydroelectric Conventional,548060
+2005,1,ID,"Electric Generators, Electric Utilities",Total,549096
+2005,1,ID,"Electric Generators, Independent Power Producers",Natural Gas,145352
+2005,1,ID,"Electric Generators, Independent Power Producers",Hydroelectric Conventional,16879
+2005,1,ID,"Electric Generators, Independent Power Producers",Total,162231
+2005,1,ID,"Combined Heat and Power, Electric Power",Natural Gas,10530
+2005,1,ID,"Combined Heat and Power, Electric Power",Wood and Wood Derived Fuels,7721
+2005,1,ID,"Combined Heat and Power, Electric Power",Total,18251
+2005,1,ID,"Combined Heat and Power, Industrial Power",Coal,8360
+2005,1,ID,"Combined Heat and Power, Industrial Power",Petroleum,0
+2005,1,ID,"Combined Heat and Power, Industrial Power",Natural Gas,7621
+2005,1,ID,"Combined Heat and Power, Industrial Power",Wood and Wood Derived Fuels,39362
+2005,1,ID,"Combined Heat and Power, Industrial Power",Other,2341
+2005,1,ID,"Combined Heat and Power, Industrial Power",Total,57684
+2005,1,IL,Total Electric Power Industry,Coal,8475630
+2005,1,IL,Total Electric Power Industry,Petroleum,44686
+2005,1,IL,Total Electric Power Industry,Natural Gas,405265
+2005,1,IL,Total Electric Power Industry,Other Gases,19201
+2005,1,IL,Total Electric Power Industry,Nuclear,8373835
+2005,1,IL,Total Electric Power Industry,Hydroelectric Conventional,14090
+2005,1,IL,Total Electric Power Industry,Wind,6460
+2005,1,IL,Total Electric Power Industry,Other Biomass,50090
+2005,1,IL,Total Electric Power Industry,Other,10706
+2005,1,IL,Total Electric Power Industry,Total,17399963
+2005,1,IL,"Electric Generators, Electric Utilities",Coal,884344
+2005,1,IL,"Electric Generators, Electric Utilities",Petroleum,31845
+2005,1,IL,"Electric Generators, Electric Utilities",Natural Gas,15099
+2005,1,IL,"Electric Generators, Electric Utilities",Hydroelectric Conventional,6204
+2005,1,IL,"Electric Generators, Electric Utilities",Other Biomass,529
+2005,1,IL,"Electric Generators, Electric Utilities",Total,938021
+2005,1,IL,"Electric Generators, Independent Power Producers",Coal,7399470
+2005,1,IL,"Electric Generators, Independent Power Producers",Petroleum,10628
+2005,1,IL,"Electric Generators, Independent Power Producers",Natural Gas,280902
+2005,1,IL,"Electric Generators, Independent Power Producers",Other Gases,0
+2005,1,IL,"Electric Generators, Independent Power Producers",Nuclear,8373835
+2005,1,IL,"Electric Generators, Independent Power Producers",Hydroelectric Conventional,7886
+2005,1,IL,"Electric Generators, Independent Power Producers",Wind,6460
+2005,1,IL,"Electric Generators, Independent Power Producers",Other Biomass,43522
+2005,1,IL,"Electric Generators, Independent Power Producers",Other,9575
+2005,1,IL,"Electric Generators, Independent Power Producers",Total,16132278
+2005,1,IL,"Combined Heat and Power, Electric Power",Coal,6787
+2005,1,IL,"Combined Heat and Power, Electric Power",Natural Gas,34094
+2005,1,IL,"Combined Heat and Power, Electric Power",Other Gases,3776
+2005,1,IL,"Combined Heat and Power, Electric Power",Other Biomass,4
+2005,1,IL,"Combined Heat and Power, Electric Power",Total,44661
+2005,1,IL,"Combined Heat and Power, Commercial Power",Coal,7625
+2005,1,IL,"Combined Heat and Power, Commercial Power",Petroleum,157
+2005,1,IL,"Combined Heat and Power, Commercial Power",Natural Gas,41783
+2005,1,IL,"Combined Heat and Power, Commercial Power",Other Biomass,41
+2005,1,IL,"Combined Heat and Power, Commercial Power",Total,49606
+2005,1,IL,"Combined Heat and Power, Industrial Power",Coal,177404
+2005,1,IL,"Combined Heat and Power, Industrial Power",Petroleum,2057
+2005,1,IL,"Combined Heat and Power, Industrial Power",Natural Gas,33386
+2005,1,IL,"Combined Heat and Power, Industrial Power",Other Gases,15426
+2005,1,IL,"Combined Heat and Power, Industrial Power",Other Biomass,5994
+2005,1,IL,"Combined Heat and Power, Industrial Power",Other,1131
+2005,1,IL,"Combined Heat and Power, Industrial Power",Total,235397
+2005,1,IN,Total Electric Power Industry,Coal,10809017
+2005,1,IN,Total Electric Power Industry,Petroleum,27103
+2005,1,IN,Total Electric Power Industry,Natural Gas,157193
+2005,1,IN,Total Electric Power Industry,Other Gases,244696
+2005,1,IN,Total Electric Power Industry,Hydroelectric Conventional,17239
+2005,1,IN,Total Electric Power Industry,Other Biomass,5293
+2005,1,IN,Total Electric Power Industry,Other,30986
