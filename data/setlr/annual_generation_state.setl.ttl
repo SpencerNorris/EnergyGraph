@@ -76,7 +76,7 @@
 				"@if" : "row.ENERGY_SOURCE.lower() == 'coal (short tons)'" ,
 				"@id": "obo:Ton" 
 			}],
-			"obo:ofCharacteristic": {"@id": "eg:ConsumptionAmount"}
+			"obo:ofCharacteristic": {"@id": "eg:GenerationAmount"}
 		},
 		{
 			"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-EnergyGeneration",
