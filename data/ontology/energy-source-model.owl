@@ -51,6 +51,9 @@
         <Class IRI="GasEnergySource"/>
     </Declaration>
     <Declaration>
+        <Class IRI="GenerationAmount"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="GeothermalEnergySource"/>
     </Declaration>
     <Declaration>
@@ -205,6 +208,10 @@
         <Class IRI="#FossilFuelEnergySource"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GenerationAmount"/>
+        <Class IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-characteristics.owl#Amount"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GeothermalEnergySource"/>
         <Class IRI="#RenewableEnergySource"/>
     </SubClassOf>
@@ -323,6 +330,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GasEnergySource</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">gas energy source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GenerationAmount</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">generation amount</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
