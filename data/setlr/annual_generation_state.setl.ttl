@@ -53,7 +53,8 @@
 			"@type": "obo:Measurement",
 			"hasValue": "{{row.GENERATION}}",
 			"obo:usesStandard": {"@id": "eg:MegawattHour"},
-			"obo:ofCharacteristic": { "@id": "eg:GenerationAmount" }
+			"obo:ofCharacteristic": { "@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-GenerationAmount" },
+			"obo:measurementFor": {"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-Observation" }
 		},
 		{
 			"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-EnergyGeneration",
@@ -309,11 +310,15 @@
 				 "@id": "state:Wyoming"
 				}
 			]
+		},
+		{
+		  "@id" : "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-GenerationAmount",
+		  "@type": "eg:GenerationAmount"
 		}]''' ;
 	].
 
 
-<annual_generation_state_FINAL.ttl> a pv:File;
+<output/annual_generation_state_FINAL.ttl> a pv:File;
     dcterms:format "text/turtle";
     prov:wasGeneratedBy [
       a setl:Load;
