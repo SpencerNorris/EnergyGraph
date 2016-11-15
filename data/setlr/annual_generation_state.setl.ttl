@@ -54,7 +54,8 @@
 			"hasValue": "{{row.GENERATION}}",
 			"obo:usesStandard": {"@id": "eg:MegawattHour"},
 			"obo:ofCharacteristic": { "@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-GenerationAmount" },
-			"obo:measurementFor": {"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-Observation" }
+			"obo:measurementFor": {"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-Observation" },
+			"obo:usesProtocol": {"@id": "eg:UnknownProtocol"}
 		},
 		{
 			"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-EnergyGeneration",
@@ -313,7 +314,8 @@
 		},
 		{
 		  "@id" : "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-GenerationAmount",
-		  "@type": "eg:GenerationAmount"
+		  "@type": "eg:GenerationAmount",
+		  "obo:characteristicFor": {"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-EnergyGeneration" }
 		}]''' ;
 	].
 
