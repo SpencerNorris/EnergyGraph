@@ -65,8 +65,12 @@ We've already done all of this but recorded the steps for the sake of reproducib
 <h2>Generating EnergyGraph</h2>
 ```
 $ cd /path/to/EnergyGraph/
-$ sh munge.sh
-OR
 $ bash munge.sh
 ```
 This will iterate over the `data/setlr` directory and call Setlr on each file; thus, only `.setl.ttl` files should be included here. You'll also likely need to change the values of `EG_HOME` and `SETLR_HOME` in `munge.sh`; these should point to the top-level directories for EnergyGraph and Setlr, respectively.
+
+It is also important to note that bash is required in order to execute the script, as it sources the environment located in `${SETLR_HOME}/venv/bin/activate`; sh does not support sourcing Python environments. As such, if you do not have bash, you'll have to either write your own script or run the individual Setls manually using the following:
+```
+$ source ${SETLR_HOME}/venv/bin/activate
+$ python setlr.py MY_SETLR_FILE.setl.ttl
+```
