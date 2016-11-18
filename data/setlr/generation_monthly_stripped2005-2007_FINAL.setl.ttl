@@ -15,7 +15,7 @@
   csvw:delimiter "," ;
   prov:wasGeneratedBy [
     a setl:Extract ;
-    prov:used <tabular/test.csv> ;
+    prov:used <tabular/generation/csv/generation_monthly_stripped2005-2007_FINAL.csv> ;
   ].
 
 
