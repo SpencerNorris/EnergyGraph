@@ -1,8 +1,4 @@
-"U.S. Department of Energy, The Energy Information Administration (EIA)",,,,,
-"Monthly Generation Data by State, Producer Sector and Energy Source; Final 2012",,,,,
-Sources: EIA-923 Report,,,,,
-,,,,,
-YEAR,MONTH,STATE,TYPE OF PRODUCER,ENERGY SOURCE,GENERATION (Megawatthours)
+YEAR,MONTH,STATE,SECTOR_NAME,ENERGY_SOURCE,GENERATION
 2012,1,AK,Total Electric Power Industry,Total,724707.28
 2012,1,AK,Total Electric Power Industry,Coal,59799.16
 2012,1,AK,Total Electric Power Industry,Hydroelectric Conventional,162651.88

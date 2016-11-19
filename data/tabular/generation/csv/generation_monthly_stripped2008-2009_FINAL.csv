@@ -1,4 +1,4 @@
-YEAR,MONTH,STATE,TYPE OF PRODUCER,ENERGY SOURCE,GENERATION (Megawatthours)
+YEAR,MONTH,STATE,SECTOR_NAME,ENERGY_SOURCE,GENERATION
 2008,1,AK,Total Electric Power Industry,Coal,55025
 2008,1,AK,Total Electric Power Industry,Petroleum,124901
 2008,1,AK,Total Electric Power Industry,Natural Gas,387570
