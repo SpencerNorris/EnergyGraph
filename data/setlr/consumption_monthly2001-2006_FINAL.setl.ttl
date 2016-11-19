@@ -346,7 +346,7 @@
 	].
 
 
-<consumption_monthly2001-2006_FINAL.ttl> a pv:File;
+<output/consumption/consumption_monthly2001-2006_FINAL.ttl> a pv:File;
     dcterms:format "text/turtle";
     prov:wasGeneratedBy [
       a setl:Load;

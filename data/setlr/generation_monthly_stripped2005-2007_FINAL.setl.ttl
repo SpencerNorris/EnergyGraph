@@ -19,7 +19,7 @@
   ].
 
 
-<http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL>
+<http://semanticweb.org/EnergyGraph/generation_monthly_stripped2005-2007_FINAL>
 	a void:Dataset;
 	prov:wasGeneratedBy [
 		a setl:Transform, setl:JSLDT ;
@@ -43,22 +43,22 @@
 		}''' ;
 		prov:value '''[
 		{
-			"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-Observation" ,
+			"@id": "http://semanticweb.org/EnergyGraph/generation_monthly_stripped2005-2007_FINAL-{{row.name}}-Observation" ,
 			"@type": "obo:Observation" ,
-			"obo:hasMeasurement": {"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-Measurement" } ,
-			"obo:ofEntity": {"@id":  "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-EnergyGeneration" }
+			"obo:hasMeasurement": {"@id": "http://semanticweb.org/EnergyGraph/generation_monthly_stripped2005-2007_FINAL-{{row.name}}-Measurement" } ,
+			"obo:ofEntity": {"@id":  "http://semanticweb.org/EnergyGraph/generation_monthly_stripped2005-2007_FINAL-{{row.name}}-EnergyGeneration" }
 		},
 		{
-			"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-Measurement" ,
+			"@id": "http://semanticweb.org/EnergyGraph/generation_monthly_stripped2005-2007_FINAL-{{row.name}}-Measurement" ,
 			"@type": "obo:Measurement",
 			"hasValue": "{{row.GENERATION}}",
 			"obo:usesStandard": {"@id": "eg:MegawattHour"},
-			"obo:ofCharacteristic": { "@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-GenerationAmount" },
-			"obo:measurementFor": {"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-Observation" },
+			"obo:ofCharacteristic": { "@id": "http://semanticweb.org/EnergyGraph/generation_monthly_stripped2005-2007_FINAL-{{row.name}}-GenerationAmount" },
+			"obo:measurementFor": {"@id": "http://semanticweb.org/EnergyGraph/generation_monthly_stripped2005-2007_FINAL-{{row.name}}-Observation" },
 			"obo:usesProtocol": {"@id": "eg:UnknownProtocol"}
 		},
 		{
-			"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-EnergyGeneration",
+			"@id": "http://semanticweb.org/EnergyGraph/generation_monthly_stripped2005-2007_FINAL-{{row.name}}-EnergyGeneration",
 			"@type": "eg:EnergyGeneration",
 			"date": [
 				{ "@if": "row.MONTH < 10", 
@@ -333,17 +333,17 @@
 			]
 		},
 		{
-		  "@id" : "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-GenerationAmount",
+		  "@id" : "http://semanticweb.org/EnergyGraph/generation_monthly_stripped2005-2007_FINAL-{{row.name}}-GenerationAmount",
 		  "@type": "eg:GenerationAmount",
-		  "obo:characteristicFor": {"@id": "http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL-{{row.name}}-EnergyGeneration" }
+		  "obo:characteristicFor": {"@id": "http://semanticweb.org/EnergyGraph/generation_monthly_stripped2005-2007_FINAL-{{row.name}}-EnergyGeneration" }
 		}]''' ;
 	].
 
 
-<output/annual_generation_state_FINAL.ttl> a pv:File;
+<output/generation/generation_monthly_stripped2005-2007_FINAL.ttl> a pv:File;
     dcterms:format "text/turtle";
     prov:wasGeneratedBy [
       a setl:Load;
       prov:used 
-	<http://semanticweb.org/EnergyGraph/annual_generation_state_FINAL> ;
+	<http://semanticweb.org/EnergyGraph/generation_monthly_stripped2005-2007_FINAL> ;
     ].
