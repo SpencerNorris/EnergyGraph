@@ -72,5 +72,6 @@ This will iterate over the `data/setlr` directory and call Setlr on each file; t
 It is also important to note that bash is required in order to execute the script, as it sources the environment located in `${SETLR_HOME}/venv/bin/activate`; sh does not support sourcing Python environments. As such, if you do not have bash, you'll have to either write your own script or run the individual Setls manually using the following:
 ```
 $ source ${SETLR_HOME}/venv/bin/activate
-$ python setlr.py MY_SETLR_FILE.setl.ttl
+$ python setlr.py ${EG_HOME}/setlr/MY_SETLR_FILE.setl.ttl
 ```
+If you do this, make sure you are in `EnergyGraph/data` when running each command, as the `.setl.ttl` files use a relative path when addressing the input and output files. 
