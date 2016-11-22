@@ -8,7 +8,7 @@
     <!ENTITY us-state-model3 "http://www.semanticweb.org/us-state-model/" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY us-state-model2 "http://www.semanticweb.org/us-state-model/#" >
-    <!ENTITY us-state-model "http://www.semanticweb.org/spencer/us-state-model/#" >
+    <!ENTITY us-state-model "http://www.semanticweb.org/spencer/us-state-model/" >
 ]>
 
 
@@ -20,7 +20,7 @@
      xmlns:us-state-model3="http://www.semanticweb.org/us-state-model/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:us-state-model="http://www.semanticweb.org/spencer/us-state-model/#">
+     xmlns:us-state-model="http://www.semanticweb.org/spencer/us-state-model/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/us-state-model/">
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
     </owl:Ontology>
