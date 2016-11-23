@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://ecoinformatics.org/oboe-ext/sbclter.1.0/oboe-sbclter.owl" uri="EnergyGraph/data/ontology/oboe/exp/oboe-sbc.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://ecoinformatics.org/oboe/oboe.1.0/oboe-anatomy.owl" uri="EnergyGraph/data/ontology/oboe/exp/oboe-anatomy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://ecoinformatics.org/oboe/oboe.1.0/oboe-biology.owl" uri="EnergyGraph/data/ontology/oboe/exp/oboe-biology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://ecoinformatics.org/oboe/oboe.1.0/oboe-chemistry.owl" uri="EnergyGraph/data/ontology/oboe/exp/oboe-chemistry.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://ecoinformatics.org/oboe/oboe.1.0/oboe-ecology.owl" uri="EnergyGraph/data/ontology/oboe/exp/oboe-ecology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://ecoinformatics.org/oboe/oboe.1.0/oboe-environment.owl" uri="EnergyGraph/data/ontology/oboe/exp/oboe-environment.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://ecoinformatics.org/oboe/oboe.1.0/oboe-taxa.owl" uri="EnergyGraph/data/ontology/oboe/exp/oboe-taxa.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://ecoinformatics.org/oboe/oboe.1.0/oboe-test.owl" uri="EnergyGraph/data/ontology/oboe/exp/oboe-test.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://ecoinformatics.org/oboe/oboe.1.2//oboe-spatial.owl" uri="EnergyGraph/data/ontology/oboe/exp/oboe-spatial.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://ecoinformatics.org/oboe/oboe.1.2//oboe-temporal.owl" uri="EnergyGraph/data/ontology/oboe/exp/oboe-temporal.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://ecoinformatics.org/oboe/oboe.1.2/oboe-characteristics.owl" uri="EnergyGraph/data/ontology/oboe/oboe-characteristics.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl" uri="EnergyGraph/data/ontology/oboe/oboe-core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://ecoinformatics.org/oboe/oboe.1.2/oboe-standards.owl" uri="EnergyGraph/data/ontology/oboe/oboe-standards.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://ecoinformatics.org/oboe/oboe.1.2/oboe.owl" uri="EnergyGraph/data/ontology/oboe/oboe.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://examples.ecoinformatics.org/oboe/LeafCarbonContentPerDryMass.owl" uri="EnergyGraph/data/ontology/oboe/exp/LeafCarbonContentPerDryMass.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://www.semanticweb.org/energysources/" uri="EnergyGraph/data/ontology/energy-source-model.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="http://www.semanticweb.org/spencer/us-state-model/" uri="us-state-model.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="duplicate:http://www.semanticweb.org/us-state-model/" uri="new-new-us-state-model.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="duplicate:http://www.semanticweb.org/us-state-model/" uri="new-us-state-model.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="https://code.ecoinformatics.org/code/semtools/trunk/dev/oboe-ext/YOUR_EXT_HERE.owl" uri="EnergyGraph/data/ontology/oboe/exp/oboe-template.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="https://code.ecoinformatics.org/code/semtools/trunk/dev/oboe/oboe.1.2rc1/oboe-annotation-schema.owl" uri="EnergyGraph/data/ontology/oboe/exp/oboe-annotation-schema.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1479919741253" name="shadowed:http://www.semanticweb.org/spencer/us-state-model/" uri="EnergyGraph/data/ontology/us-state-model.owl"/>
+    </group>
+</catalog>
