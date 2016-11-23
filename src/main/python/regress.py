@@ -1,6 +1,8 @@
 import statsmodels.api as sm
 import numpy as np
 
+#Derived from http://statsmodels.sourceforge.net/stable/
+
 # check the p_value
 def reg_m(y, x):
     ones = np.ones(len(x[0]))
