@@ -1,44 +1,34 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# Author: Spencer Norris
 
-from rdflib import *
+from rdflib import Graph
 import csv
 import json
 import requests
 import sys, os
+from endpoint import Stardog
 
 #Local modules
 import regress
 
 #Globals
-
-
-#Helper methods
-
-'''
-Returns the energy sources responsible for the largest generation amount
-per state per year.
-'''
-#Why the hell am I doing it this way? I'll just query the triplestore
-'''
-def get_largest_production_by_source():
-	generation = {}
-	for file in files:
-		with open(file, 'r') as csv_file:
-			reader = csv.DictReader(csv_file)
-'''
+os.environ['EG_HOME'] = '.'
+energy_graph = Stardog()
+state_model = Graph()
+source_model = Graph()
 
 #Main processing methods
 def regression():
 	return 0
 
-def query():
-	return 0
-
 def process():
 	return 0
 
-def main():
+def main(): 
+	#Import ontologies
+	state_model.parse(os.environ['EG_HOME'] + '/data/ontology/us-state-model.owl', format="rdf/xml")
+	source_model.parse(os.environ['EG_HOME'] + '/data/ontology/energy-source-model.owl', format="rdf/xml")
 	return 0
 
 if __name__ == '__main__':
