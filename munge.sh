@@ -1,4 +1,4 @@
-#!bin/bash
+#!/usr/bin/env bash
 SETLR_HOME=~/setlr
 EG_HOME=/home/spencer/courses/datasci/EnergyGraph
 source ${SETLR_HOME}/venv/bin/activate
