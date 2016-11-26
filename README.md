@@ -1,8 +1,9 @@
 <h2>Prerequisites</h2>
 <ul>
-<li>Python 2.7+</li>
+<li><a href=https://www.continuum.io/downloads>Anaconda</a></li>
 <li>A shell or bash</li>
-<li>Setlr: The Semantic Extract, Transform, and Load-er (Github repo <a href=https://github.com/tetherless-world/setlr>here</a>)
+<li>Setlr: The Semantic Extract, Transform, and Load-er (Github repo <a href=https://github.com/tetherless-world/setlr>here</a>)</li>
+<li>An internet connection (for Anaconda dependencies)</li>
 </ul>
 
 <h2>Namespaces</h2>
@@ -75,3 +76,7 @@ $ source ${SETLR_HOME}/venv/bin/activate
 $ python setlr.py ${EG_HOME}/setlr/MY_SETLR_FILE.setl.ttl
 ```
 If you do this, make sure you are in `EnergyGraph/data` when running each command, as the `.setl.ttl` files use a relative path when addressing the input and output files. 
+
+<h2>Running Regression Analyses</h2>
+Once EnergyGraph has been generated, you can run the scripts for regression analysis:
+`./run.sh`
