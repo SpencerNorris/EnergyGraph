@@ -69,6 +69,9 @@
         <Class IRI="IndustrialPowerConsumption"/>
     </Declaration>
     <Declaration>
+        <Class IRI="MegawattHour"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="NaturalGas"/>
     </Declaration>
     <Declaration>
@@ -238,6 +241,10 @@
         <Class IRI="ConsumptionSector"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="MegawattHour"/>
+        <Class IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#CompositeUnit"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="NaturalGas"/>
         <Class IRI="GasEnergySource"/>
     </SubClassOf>
@@ -374,6 +381,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>IndustrialPowerConsumption</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">industrial power consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MegawattHour</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">megawatt-hour</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
