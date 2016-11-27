@@ -7,16 +7,17 @@
 #Substring check from http://stackoverflow.com/questions/229551/string-contains-in-bash
 if [[ ! $(conda info --envs) == *"EnergyGraph"* ]]
 then
-  conda create -n EnergyGraph
+	
+	#Activate and set up environment
+  	conda create -n EnergyGraph
+  	source activate EnergyGraph
+	pip install rdflib
+	easy_install SPARQLWrapper
+	conda install statsmodels --yes
+	conda install requests --yes
 fi
 
-#Activate and set up environment
-source activate EnergyGraph
-pip install rdflib
-easy_install SPARQLWrapper
-conda install statsmodels --yes
-conda install requests --yes
-
 #Execute script and deactivate environment
+source activate EnergyGraph
 python ./src/main/python/main.py
 source deactivate
