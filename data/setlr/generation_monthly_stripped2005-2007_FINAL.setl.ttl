@@ -110,23 +110,23 @@
 				},
 				{
 					"@if": "row.ENERGY_SOURCE.lower() == 'wind'",
-					"@id": "eg:Wind"
+					"@id": "eg:WindEnergySource"
 				},
 				{
 					"@if": "row.ENERGY_SOURCE.lower() == 'hydroelectric conventional'",
-					"@id": "eg:Hydroelectric"
+					"@id": "eg:HydroelectricEnergySource"
 				},
 				{
 					"@if": "row.ENERGY_SOURCE.lower() == 'solar thermal and photovoltaic'",
-					"@id": "eg:SolarThermalAndPhotovoltaic"
+					"@id": "eg:SolarEnergySource"
 				},
 				{
 				 	"@if": "row.ENERGY_SOURCE.lower() == 'nuclear'",
-				 	"@id": "eg:Nuclear"
+				 	"@id": "eg:NuclearEnergySource"
 				},
 				{
 					"@if": "row.ENERGY_SOURCE.lower() == 'Geothermal'",
-					"@id": "eg:Geothermal"
+					"@id": "eg:GeothermalEnergySource"
 				}
 			],
 			"prov:atLocation": [
