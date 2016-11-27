@@ -32,24 +32,29 @@ class Stardog(SPARQLStore):
 	source_concept identifies the class of energy source (eg:FossilFuelEnergySource, eg:Petroleum, etc).
 	If num is provided, it will be the upper limit on the number of results.
 	'''
-	def query_by_energy_source(self, source_concept_uri, state_uri, process_type_uri, num=None):
+	def query_by_energy_source(self, source_concept_uri, state_uri=None, process_type_uri, num=None):
+		state_clause = ''
+		limit_clause = ''
+		if not(state_uri is None):
+			state_clause = '?process prov:atLocation <%s> .' % state_uri.n3()
+		if not(num is None):
+			limit_clause = " LIMIT %d" % num
 		rq = """
 		prefix state:  <http://www.semanticweb.org/us-state-model/>
 		prefix eg:	   <http://www.semanticweb.org/EnergyGraph/>
 		prefix source: <http://www.semanticweb.org/energysources/>
 		prefix obo:	   <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#>
+		prefix prov:
 		SELECT ?process ?source ?state ?date ?amount WHERE{
 			?process a <%s> ;
-					 eg:ofEnergySource ?source ;
-					 state:ofState	   <%s> ;
+					 eg:ofEnergySource ?source .
+			%s 
 					 obo:hasMeasurement ?measurement ;
 					 eg:date 		   ?date .
-			?measurement obo:value	   ?amount .
+			?measurement obo:hasValue  ?amount .
 			?source  a 				   <%s> .
-		}
-		""" % process_type_uri, state_uri.n3(), source_concept_uri
-		if not(num is None):
-			rq += " LIMIT %d" % num
+		} %s 
+		""" % process_type_uri, state_clause, source_concept_uri, limit_clause
 		return [{
 			'process': process,
 			'source': source,
