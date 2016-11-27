@@ -57,6 +57,9 @@
         <Class IRI="GeothermalEnergySource"/>
     </Declaration>
     <Declaration>
+        <Class IRI="HydroelectricEnergySource"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="IndependentElectricGeneratorConsumption"/>
     </Declaration>
     <Declaration>
@@ -67,6 +70,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="NaturalGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NuclearEnergySource"/>
     </Declaration>
     <Declaration>
         <Class IRI="OtherGasEnergySource"/>
@@ -216,6 +222,10 @@
         <Class IRI="#RenewableEnergySource"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="HydroelectricEnergySource"/>
+        <Class IRI="#EnergySource"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="IndependentElectricGeneratorConsumption"/>
         <Class IRI="ConsumptionSector"/>
     </SubClassOf>
@@ -230,6 +240,10 @@
     <SubClassOf>
         <Class IRI="NaturalGas"/>
         <Class IRI="GasEnergySource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NuclearEnergySource"/>
+        <Class IRI="#EnergySource"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="OtherGasEnergySource"/>
@@ -343,6 +357,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HydroelectricEnergySource</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">hydroelectric energy source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>IndependentElectricGeneratorConsumption</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">independent electric generator consumption</Literal>
     </AnnotationAssertion>
@@ -360,6 +379,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>NaturalGas</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">natural gas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>NuclearEnergySource</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">nuclear energy source</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
