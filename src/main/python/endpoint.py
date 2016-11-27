@@ -44,7 +44,7 @@ class Stardog(SPARQLStore):
 		prefix eg:	   <http://www.semanticweb.org/EnergyGraph/>
 		prefix source: <http://www.semanticweb.org/energysources/>
 		prefix obo:	   <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#>
-		prefix prov:
+		prefix prov:   <http://www.w3.org/ns/prov#>
 		SELECT ?process ?source ?state ?date ?amount WHERE{
 			?process a <%s> ;
 					 eg:ofEnergySource ?source .
